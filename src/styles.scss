@@ -8,12 +8,18 @@
   font-family: "syne", "sans-serif";
 }
 
+html,
+body {
+  background: #FFFCF3;
+}
+
 section {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  .content {
+
+  .content-wrapper {
     width: 100%;
     max-width: 1920px;
   }
@@ -21,6 +27,5 @@ section {
 
 @font-face {
   font-family: "syne";
-  src: url("../public//fonts/syne-v23-latin/syne-v23-latin-regular.woff2")
-    format("woff");
+  src: url("../public//fonts/syne-v23-latin/syne-v23-latin-regular.woff2") format("woff");
 }

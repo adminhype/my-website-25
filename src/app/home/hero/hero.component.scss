@@ -16,6 +16,14 @@ section {
         @media(max-width: 1024px) {
             font-size: 4rem;
         }
+
+        @media(max-width: 768px) {
+            font-size: 3rem;
+        }
+
+        @media(max-width: 640px) {
+            font-size: 2.25rem;
+        }
     }
 }
 
@@ -25,6 +33,10 @@ section {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
+    @media(max-width: 640px) {
+        padding: 0 8rem 0 0;
+    }
 
     .line {
         width: 100%;
@@ -39,6 +51,10 @@ section {
 
         @media(max-width: 768px) {
             max-width: 320px;
+        }
+
+        @media(max-width: 640px) {
+            max-width: 120px;
         }
     }
 
@@ -56,7 +72,34 @@ section {
         @media(max-width: 768px) {
             font-size: 1.2rem;
         }
+
+        @media(max-width: 640px) {
+            display: none;
+        }
     }
+}
+
+.hero-mobile-container {
+    display: none;
+
+    @media(max-width: 640px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hero-mobile-btn {
+        padding: 1rem 2rem;
+        border: solid 3px black;
+        background: transparent;
+        cursor: pointer;
+
+        &:active {
+            animation: spread 0.1s ease-in-out;
+        }
+    }
+
 }
 
 .hero-side-content {
@@ -111,5 +154,21 @@ section {
         //         }
         //     }
         // }
+    }
+}
+
+
+//Button keyframe
+@keyframes spread {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(1.2);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }

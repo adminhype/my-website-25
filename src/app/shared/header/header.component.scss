@@ -14,7 +14,15 @@ header {
     padding: 0 1.5rem;
   }
 
+  @media(max-width: 640px) {
+    height: 64px;
+    padding: 0 1rem;
+  }
+
   .logo {
+    display: flex;
+    align-items: center;
+
     img {
       max-height: 96px;
     }
@@ -24,9 +32,16 @@ header {
         max-height: 64px;
       }
     }
+
+    @media(max-width: 640px) {
+      img {
+        max-height: 56px;
+      }
+    }
   }
 
   .burger-menu {
+    display: flex;
     background: none;
     border: none;
     cursor: pointer;

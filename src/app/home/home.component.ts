@@ -3,10 +3,11 @@ import { HeaderComponent } from '../shared/header/header.component';
 import { HeroComponent } from "./hero/hero.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { MySkillsComponent } from "./my-skills/my-skills.component";
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, HeroComponent, AboutMeComponent, MySkillsComponent],
+  imports: [HeaderComponent, HeroComponent, AboutMeComponent, MySkillsComponent, PortfolioComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

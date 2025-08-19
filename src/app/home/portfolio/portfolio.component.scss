@@ -1,0 +1,161 @@
+.portfolio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    @media(max-width: 640px) {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 4rem;
+        padding: 0 0 1rem 0;
+
+        &:hover {
+            color: #5988FF;
+        }
+
+        @media(max-width: 1024px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+}
+
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 560px;
+
+        >img {
+            width: 100%;
+            object-fit: contain;
+            filter: grayscale(100%);
+            border: solid 3px transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                filter: grayscale(0%);
+                border: solid 3px black;
+            }
+        }
+
+        .overlay-arrow {
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+            background: black;
+            border-radius: 50%;
+            border: none;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: rotateArrow 0.3s ease forwards;
+
+            &:hover {
+                border: none;
+            }
+
+            img {
+
+                width: 56px;
+                height: 56px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .portfolio-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 0.5rem;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: all 0.4s ease;
+        pointer-events: none;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .stack-title {
+            font-size: 1.2rem;
+            color: #5988FF;
+        }
+
+        .text-btn {
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            border: solid 3px black;
+            background: transparent;
+            cursor: pointer;
+
+            &:hover {
+                animation: spread 0.2s ease-out forwards;
+            }
+        }
+
+        @media(max-width: 640px) {
+            display: none;
+        }
+    }
+
+    &:hover .portfolio-overlay {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+}
+
+.portfolio-count {
+    display: flex;
+    justify-content: end;
+    align-self: start;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+//button overlay
+@keyframes spread {
+    0% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: scaleX(1.2);
+        transform-origin: left;
+    }
+}
+
+// arrow overlay
+@keyframes rotateArrow {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(90deg);
+    }
+}

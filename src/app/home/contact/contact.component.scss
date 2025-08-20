@@ -224,13 +224,32 @@
         justify-content: end;
         cursor: pointer;
         position: absolute;
-        top: 300px;
+        top: 30rem;
         right: 3rem;
         left: 0;
         bottom: 200px;
 
+        &:hover {
+            animation: arrowHead 0.5s ease-in forwards;
+        }
+
         @media(max-width:1024px) {
             display: none;
         }
+
+        @keyframes arrowHead {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(-15px);
+            }
+        }
     }
+
 }

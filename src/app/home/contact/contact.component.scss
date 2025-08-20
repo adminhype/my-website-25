@@ -1,0 +1,236 @@
+.arrow-right {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 200px;
+    // left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 0;
+    margin: 0 3rem;
+
+    @media(max-width: 640px) {
+        margin: 0 2rem 2rem 0;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+        animation: arrowDownRight 1s ease-out;
+
+        @media(max-width: 640px) {
+            width: 150px;
+            height: 150px;
+            animation: none;
+
+            &:hover {
+                animation: arrowDownRight 1s ease-out;
+            }
+        }
+    }
+
+    //arrow keyframes
+    @keyframes arrowDownRight {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translate(-40px, 40px);
+            opacity: 1;
+        }
+    }
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    min-height: 220px;
+    background: #000;
+    clip-path: polygon(0 1%, 111% 86%, 100% 113%, 0 113%);
+
+    @media(max-width: 1024px) {
+        clip-path: polygon(0 1%, 181% 86%, 100% 113%, 0 113%);
+    }
+
+    @media(max-width: 640px) {
+        clip-path: polygon(0 3%, 400% 85%, 100% 113%, 0 113%);
+        padding: 1rem 0;
+    }
+
+    .contact-title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+
+        h2 {
+            font-size: 4rem;
+            color: #fff;
+
+            &:hover {
+                color: #5988FF;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        @media(max-width: 1024px) {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        @media(max-width: 640px) {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: start;
+            justify-content: end;
+        }
+    }
+
+
+
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: #000;
+    gap: 1rem;
+
+    @media(max-width: 640px) {
+        padding: 1rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+        color: #5988FF;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 560px;
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+            border: solid 3px transparent;
+            border-bottom: solid 3px #fff;
+
+
+            &:hover {
+                border: solid 3px #fff;
+            }
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+
+        .privacy-policy {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 1rem 0;
+            color: #fff;
+            width: 100%;
+
+            input {
+                width: 20px;
+                height: 20px;
+                margin-right: 0.5rem;
+                cursor: pointer;
+                background: #000;
+
+                @media(max-width: 640px) {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            #subscribe {
+                display: flex;
+                align-items: center;
+            }
+
+            label {
+                font-size: 0.9rem;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+
+        .message-btn {
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            border: solid 3px grey;
+            background: #000;
+            color: grey;
+            cursor: pointer;
+
+            &:hover {
+                border: solid 3px grey;
+                animation: spread 0.3s ease-in-out forwards;
+
+            }
+
+            @keyframes spread {
+                0% {
+                    transform: scaleX(1);
+                }
+
+                50% {
+                    transform: scaleX(1.2);
+                }
+
+                100% {
+                    transform: scaleX(1.2);
+                }
+            }
+        }
+
+    }
+
+    .arrow-top {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        cursor: pointer;
+        position: absolute;
+        top: 300px;
+        right: 3rem;
+        left: 0;
+        bottom: 200px;
+
+        @media(max-width:1024px) {
+            display: none;
+        }
+    }
+}

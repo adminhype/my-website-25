@@ -1,11 +1,7 @@
-section {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
 .hero-header {
     text-align: center;
+    margin: 4rem 0;
+    padding: 4rem 0;
 
     .hero-title {
         display: inline-block;
@@ -24,6 +20,10 @@ section {
         @media(max-width: 640px) {
             font-size: 2.25rem;
         }
+
+        @media(max-width: 375px) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -41,9 +41,10 @@ section {
     .line {
         width: 100%;
         max-width: 500px;
-        height: 2px;
+        height: 4px;
         margin: 1rem 0;
         background: black;
+        border-radius: 10px;
 
         @media(max-width: 1024px) {
             max-width: 420px;
@@ -138,33 +139,43 @@ section {
             padding: 1rem;
         }
 
-        // .keyframe {
-        //     padding: 2rem 0;
-        //     animation: moveDown 0.2s linear infinite;
+        .scroll-viewport {
+            height: 72px;
+            overflow: hidden;
+        }
 
-        //     @keyframes moveDown {
-        //         0% {
-        //             transform: translateY(-100px);
-        //             opacity: 0;
-        //         }
-
-        //         20% {
-        //             opacity: 1;
-        //         }
-
-        //         80% {
-        //             opacity: 1;
-        //         }
-
-        //         100% {
-        //             transform: translateY(40px);
-        //             opacity: 0;
-        //         }
-        //     }
-        // }
+        .arrow-down {
+            animation: moveDown 1s linear infinite;
+        }
     }
 }
 
+// arrow down keyframe 
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    60% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
 
 //Button keyframe
 @keyframes spread {

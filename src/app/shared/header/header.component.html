@@ -3,7 +3,60 @@
       <img src="./images/ao-black-logo.png" alt="Logo" />
     </a>
 
-    <button class="burger-menu">
+    <button class="burger-menu"
+    type="button"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isMenuOpen"
+    aria-controls="menuOverlay"
+    aria-label="main menu open/close">
       <img src="./images/icons/burger-menu.png" alt="menu" />
-    </button>
+  </button>
+
+      <nav   
+        class="menu-overlay"
+        id="menuOverlay"
+        [class.open]="isMenuOpen"
+        role="dialog"
+        aria-modal="true">
+
+        <div class="menu-items">
+          <a href="#about" (click)="closeMenu()">
+            About me
+            <span class="line"></span>
+          </a>
+          <a href="#projects" (click)="closeMenu()">
+            My Skills
+            <span class="line"></span>
+          </a>
+          <a href="#contact" (click)="closeMenu()">
+            Portfolio
+            <span class="line"></span>
+          </a>
+        </div>
+
+      <div class="socials">
+            <div class="socials-shape" aria-hidden="true"></div>
+
+            <div class="socials-content">
+              <a class="logo" href="#footer" rel="noopener noreferrer">
+                <img src="./images/ao_logo.png" alt="">
+                <a href="mailto:adem@oencue.com">adem&#64;oencue.com</a>
+              </a>
+
+                <div class="social-media">
+                    <div class="icons">
+                      <a href="" target="_blank">
+                        <img src="./images/icons/github-icon.png" alt="Github">
+                      </a>
+                      <a href="" target="_blank">
+                        <img src="./images/icons/email-icon.png" alt="Email">
+                      </a>
+                      <a href="" target="_blank">
+                        <img src="./images/icons/link-icon.png" alt="LinkedIn">
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
 </header>

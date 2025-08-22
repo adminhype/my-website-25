@@ -56,7 +56,7 @@
         h2 {
             font-size: 4rem;
             color: #fff;
-            transform: scaleX(1.8);
+            transform: scaleX(1.5);
             padding: 0 0 1rem 5rem;
 
 
@@ -72,7 +72,7 @@
         @media(max-width: 1024px) {
             h2 {
                 font-size: 2.5rem;
-                padding: 0 0 0 4rem;
+                padding: 0 0 0 2rem;
             }
         }
 
@@ -84,9 +84,7 @@
 
 
             h2 {
-                font-size: 1.8rem;
-                width: 100%;
-                max-width: 275px
+                font-size: 1.5rem;
             }
 
         }

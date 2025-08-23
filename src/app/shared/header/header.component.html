@@ -8,9 +8,11 @@
     (click)="toggleMenu()"
     [attr.aria-expanded]="isMenuOpen"
     aria-controls="menuOverlay"
-    aria-label="main menu open/close">
-      <img src="./images/icons/burger-menu.png" alt="menu" />
-  </button>
+    [attr.aria-label]="isMenuOpen ? 'main menu close' : 'main menu open'"
+    [class.open]="isMenuOpen">
+    <img
+      [src]="isMenuOpen ? './images/icons/cross-menu.png' : './images/icons/burger-menu.png'"/>
+</button>
 
       <nav   
         class="menu-overlay"

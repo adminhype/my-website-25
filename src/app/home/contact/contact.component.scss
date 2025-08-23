@@ -1,14 +1,8 @@
 .arrow-right {
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 200px;
-    left: 0; */
     display: flex;
     align-items: center;
     justify-content: end;
-    padding: 1rem 0;
-    margin: 0 3rem;
+    padding: 1rem 3rem;
 
     &:hover {
         animation: arrowDownRight 1s ease-out;
@@ -20,7 +14,7 @@
     }
 
     @media(max-width: 640px) {
-        margin: 0 2rem 2rem 0;
+        padding: 0 2rem 2rem 0;
 
         img {
             width: 150px;
@@ -35,14 +29,14 @@
     padding: 0 3rem;
     min-height: 220px;
     background: #000;
-    clip-path: polygon(0 1%, 135% 62%, 100% 113%, 0 113%);
+    clip-path: polygon(-2% 0, 135% 62%, 100% 113%, 0 113%);
 
     @media(max-width: 1024px) {
-        clip-path: polygon(0 1%, 181% 86%, 100% 113%, 0 113%);
+        clip-path: polygon(-2% 0, 181% 86%, 100% 113%, 0 113%);
     }
 
     @media(max-width: 640px) {
-        clip-path: polygon(0 3%, 400% 85%, 100% 113%, 0 113%);
+        clip-path: polygon(-2% 0, 400% 85%, 100% 113%, 0 113%);
         padding: 1rem 0;
     }
 

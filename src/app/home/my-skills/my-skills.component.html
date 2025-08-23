@@ -6,48 +6,19 @@
             <div class="header-skills">
                 <h2>My skills</h2>
             </div>
-            <ul>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 1</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 2</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 3</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 4</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 5</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 6</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 7</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 8</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 9</span>
-                </li>
-                <li>
-                    <img src="./images/icons/angular-icon.png" alt="">
-                    <span>Skill 10</span>
-                </li>
-            </ul>
+                <ul>
+                    @for (skill of skills; track skill.key) {
+                    <li>
+                        <img
+                        ngSrc="{{ basePath }}/{{ skill.icon }}"
+                        width="60"
+                        height="60"
+                        [alt]="skill.label"
+                        decoding="async" />
+                        <span>{{ skill.label }}</span>
+                    </li>
+                    }
+                </ul>
         </div>
         <div id="arrow-left" >
             <img src="./images/arrow-diagonal.png" alt="">

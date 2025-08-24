@@ -11,15 +11,77 @@
     </span>
     <p>Let’s connect and create something amazing together!</p>
 
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <div  class="privacy-policy" >
-            <input type="checkbox" id="subscribe">
-            <label for="subscribe">I`ve read the privacy policy and agree to the processing of my data as outlined.</label>
+    
+        
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+        <!-- NAME -->
+        <input
+        type="text"
+        formControlName="name"
+        placeholder="Your Name"
+        aria-label="Your Name"
+        [attr.aria-invalid]="f.name.invalid && (f.name.touched || submitted) ? true : null"
+        [attr.aria-describedby]="f.name.invalid ? 'name-error' : null" />
+
+        @if (f.name.touched && f.name.invalid) {
+        <div class="field-error" id="name-error" aria-live="polite">
+            @if (f.name.errors?.['required']) { <small>name is required.</small> }
+            @if (f.name.errors?.['minlength']) { <small>Minimum 2 characters.</small> }
         </div>
-        <button class="message-btn">Send Message</button>
+        }
+
+        <!-- EMAIL -->
+        <input
+        type="email"
+        formControlName="email"
+        placeholder="Your Email"
+        aria-label="Your Email"
+        [attr.aria-invalid]="f.email.invalid && (f.email.touched || submitted) ? true : null"
+        [attr.aria-describedby]="f.email.invalid ? 'email-error' : null" />
+
+        @if (f.email.touched && f.email.invalid) {
+        <div class="field-error" id="email-error" aria-live="polite">
+            @if (f.email.errors?.['required']) { <small>E-Mail is required.</small> }
+            @if (f.email.errors?.['email'])    { <small>Please enter a valid E-Mail.</small> }
+        </div>
+        }
+
+        <!-- MESSAGE -->
+        <textarea
+        formControlName="message"
+        placeholder="Your Message"
+        aria-label="Your Message"
+        [attr.aria-invalid]="f.message.invalid && (f.message.touched || submitted) ? true : null"
+        [attr.aria-describedby]="f.message.invalid ? 'message-error' : null"></textarea>
+
+        @if (f.message.touched && f.message.invalid) {
+        <div class="field-error" id="message-error" aria-live="polite">
+            @if (f.message.errors?.['required'])  { <small>message is required.</small> }
+            @if (f.message.errors?.['minlength']) { <small>Minimum 10 characters.</small> }
+        </div>
+        }
+
+        <!-- CONSENT -->
+        <div class="privacy-policy">
+        <input
+            type="checkbox"
+            id="subscribe"
+            formControlName="consent"
+            [attr.aria-describedby]="f.consent.invalid ? 'consent-error' : null" />
+        <label for="subscribe">
+            I`ve read the privacy policy and agree to the processing of my data as outlined.
+        </label>
+        </div>
+
+        @if (f.consent.touched && f.consent.invalid) {
+        <div class="field-error" id="consent-error" aria-live="polite">
+            <small>Please confirm privacy policy.</small>
+        </div>
+        }
+
+        <button class="message-btn" type="submit" [disabled]="form.invalid || form.pending">
+        Send Message
+        </button>
     </form>
 
     <a class="arrow-top" href="#top">

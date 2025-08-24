@@ -29,7 +29,6 @@
                 height: 56px;
                 width: 64px;
                 cursor: pointer;
-
             }
 
             p {
@@ -81,8 +80,22 @@
                 }
             }
 
-            p {
+            a {
                 color: #fff;
+            }
+
+            .legal-notice {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                @media(max-width: 640px) {
+                    font-size: 1rem;
+                }
             }
 
             @keyframes translateIcons {

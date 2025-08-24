@@ -9,12 +9,7 @@
                 <ul>
                     @for (skill of skills; track skill.key) {
                     <li>
-                        <img
-                        ngSrc="{{ basePath }}/{{ skill.icon }}"
-                        width="60"
-                        height="60"
-                        [alt]="skill.label"
-                        decoding="async" />
+                        <img src="{{ basePath }}/{{ skill.icon }}" alt="{{ skill.label }}" />
                         <span>{{ skill.label }}</span>
                     </li>
                     }

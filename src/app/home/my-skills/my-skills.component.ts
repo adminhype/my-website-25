@@ -1,10 +1,9 @@
-import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { Skills } from '../../interfaces/skills';
 
 @Component({
   selector: 'app-my-skills',
-  imports: [NgOptimizedImage],
+  imports: [],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })

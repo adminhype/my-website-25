@@ -1,0 +1,16 @@
+    {
+        "hero": {
+            "title": {
+                "top": "Umfassender",
+                "bottom": "Entwickler"
+            },
+            "name": "Adem Oencue",
+            "cta": "Nachricht senden",
+            "emailAria": "E-Mail an {name}",
+            "scroll": {
+                "line1": "Nach",
+                "line2": "unten"
+            },
+            "arrowAlt": "Pfeil nach unten"
+        }
+    }

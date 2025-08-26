@@ -1,0 +1,16 @@
+    {
+        "hero": {
+            "title": {
+                "top": "Fullstack",
+                "bottom": "Developer"
+            },
+            "name": "Adem Oencue",
+            "cta": "Send a message",
+            "emailAria": "E-mail to {name}",
+            "scroll": {
+                "line1": "Scroll",
+                "line2": "Down"
+            },
+            "arrowAlt": "Arrow down"
+        }
+    }

@@ -1,26 +1,35 @@
-    <div class="hero-header"> 
-            <h1 class="hero-title">
-                Fullstack <br> Developer
-            </h1>
-            <div class="hero-secondary">
+    <div class="hero-header">
+        <h1 class="hero-title">
+            {{ 'hero.title.top' | translate }}<br />
+            {{ 'hero.title.bottom' | translate }}
+        </h1>
+
+        <div class="hero-secondary">
             <div class="line"></div>
-            <h3>Adem Oencue</h3>
+            <h3>{{ 'hero.name' | translate }}</h3>
         </div>
+        </div>
+
+        <div class="hero-mobile-container">
+        <a class="hero-mobile" href="#contact-header">
+            {{ 'hero.cta' | translate }}
+        </a>
     </div>
-    <div class="hero-mobile-container" >
-            <a class="hero-mobile" href="#contact-header"> Send a message</a>
-    </div>
+
     <div id="hero-side-content">
-            <a class="hero-side-email" href="mailto:Adem@gmail.com" aria-label="E-Mail to Adem">
+        <a class="hero-side-email"
+            href="mailto:Adem@gmail.com"
+            [attr.aria-label]="'hero.emailAria' | translate:{ name: ('hero.name' | translate) }">
             Adem&#64;mail.com
         </a>
-        <div class="hero-side-scroll" aria-hidden="true">
-            <div class="scroll-viewport">
-            <div class="arrow-down" >
-                <img src="./images/arrow-down.png" alt="">
+
+            <div class="hero-side-scroll" aria-hidden="true">
+                <div class="scroll-viewport">
+                <div class="arrow-down">
+                    <img src="./images/arrow-down.png" [attr.alt]="'hero.arrowAlt' | translate" />
+                </div>
+                </div>
+                <p>{{ 'hero.scroll.line1' | translate }}</p>
+                <p>{{ 'hero.scroll.line2' | translate }}</p>
             </div>
-            </div>
-            <p>Scroll</p>
-            <p>Down</p>
-        </div>
     </div>

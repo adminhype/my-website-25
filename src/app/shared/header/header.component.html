@@ -2,6 +2,19 @@
     <a class="logo" href="#" aria-label="Go Home">
       <img src="./images/ao-black-logo.png" alt="Logo" />
     </a>
+    
+    <div class="actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn"
+        (click)="changeLanguage('de')"
+        [class.is-active]="lang === 'de'"
+        [attr.aria-pressed]="lang === 'de'">DE</button>
+
+        <button type="button" class="lang-btn"
+        (click)="changeLanguage('en')"
+        [class.is-active]="lang === 'en'"
+        [attr.aria-pressed]="lang === 'en'">EN</button>
+      </div>
 
     <button class="burger-menu"
     type="button"
@@ -12,7 +25,8 @@
     [class.open]="isMenuOpen">
     <img
       [src]="isMenuOpen ? './images/icons/cross-menu.png' : './images/icons/burger-menu.png'"/>
-</button>
+    </button>
+    </div>
 
       <nav   
         class="menu-overlay"

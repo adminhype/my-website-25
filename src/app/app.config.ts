@@ -11,7 +11,7 @@ export const appConfig: ApplicationConfig = {
         anchorScrolling: 'enabled',
       })),
       provideHttpClient(withFetch()),
-      provideTranslateService({ defaultLanguage: 'en' }),
+      provideTranslateService({ fallbackLang: 'en' }),
       provideTranslateHttpLoader({
         prefix: 'i18n/',
         suffix: '.json',

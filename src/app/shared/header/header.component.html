@@ -4,16 +4,16 @@
     </a>
     
     <div class="actions">
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" class="lang-btn"
-        (click)="changeLanguage('de')"
-        [class.is-active]="lang === 'de'"
-        [attr.aria-pressed]="lang === 'de'">DE</button>
+            <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" class="lang-btn"
+              (click)="translate.use('de')"
+              [class.is-active]="lang === 'de'"
+              [attr.aria-pressed]="lang === 'de'">DE</button>
 
-        <button type="button" class="lang-btn"
-        (click)="changeLanguage('en')"
-        [class.is-active]="lang === 'en'"
-        [attr.aria-pressed]="lang === 'en'">EN</button>
+      <button type="button" class="lang-btn"
+              (click)="translate.use('en')"
+              [class.is-active]="lang === 'en'"
+              [attr.aria-pressed]="lang === 'en'">EN</button>
       </div>
 
     <button class="burger-menu"

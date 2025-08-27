@@ -57,7 +57,7 @@
             "imageAlt": "Porträt von {{name}}, lächelnd"
         },
         "skills": {
-            "title": "Meine Fähigkeiten",
+            "title": "Fähigkeiten",
             "diagArrowLeftAlt": "Diagonalpfeil nach links",
             "diagArrowRightAlt": "Diagonalpfeil nach rechts",
             "items": {

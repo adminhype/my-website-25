@@ -1,3 +1,11 @@
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .hero-header {
     text-align: center;
     margin: 2rem 0;
@@ -8,6 +16,7 @@
         font-weight: bold;
         font-size: 6rem;
         transform: scaleX(1.8);
+        width: 100%;
 
         @media(max-width: 1024px) {
             font-size: 4rem;
@@ -32,6 +41,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     gap: 2rem;
 
     @media(max-width: 640px) {
@@ -109,6 +119,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    width: 100%;
 
     .hero-side-email {
         display: flex;

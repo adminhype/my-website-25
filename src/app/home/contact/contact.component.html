@@ -1,30 +1,31 @@
 <div class="arrow-right" >
-    <img src="./images/arrow-left-diagonal.png" alt="">
+    <img src="./images/arrow-left-diagonal.png" 
+    [attr.alt]="'contact.icons.diagLeftAlt' | translate" >
 </div>
 <div id="contact-header" > 
     <div class="contact-title">
-        <h2>What`s up? </h2>
+        <h2>{{ 'contact.title' | translate }}</h2>
     </div>
 </div>
 <div class="contact-content">
-    <span>Tell me about your role or project. I'll reply promptly.
-    </span>
-    <p>Let's connect and create something amazing together!</p>
+    <span>{{ 'contact.lead' | translate }}</span>
+    <p>{{ 'contact.sublead' | translate }}</p>
+
         
     <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
         <!-- NAME -->
         <input
         type="text"
         formControlName="name"
-        placeholder="Your Name"
-        aria-label="Your Name"
+        [placeholder]="'contact.form.name.placeholder' | translate"
+        [attr.aria-label]="'contact.form.name.aria' | translate"
         [attr.aria-invalid]="f.name.invalid && (f.name.touched || submitted) ? true : null"
         [attr.aria-describedby]="f.name.invalid ? 'name-error' : null" />
 
         @if (f.name.touched && f.name.invalid) {
         <div class="field-error" id="name-error" aria-live="polite">
-            @if (f.name.errors?.['required']) { <small>name is required.</small> }
-            @if (f.name.errors?.['minlength']) { <small>Minimum 2 characters.</small> }
+            @if (f.name.errors?.['required'])  { <small>{{ 'contact.errors.name.required'   | translate }}</small> }
+            @if (f.name.errors?.['minlength']) { <small>{{ 'contact.errors.name.minlength' | translate:{ min: f.name.errors?.['minlength']?.requiredLength } }}</small> }
         </div>
         }
 
@@ -32,30 +33,30 @@
         <input
         type="email"
         formControlName="email"
-        placeholder="Your Email"
-        aria-label="Your Email"
+        [placeholder]="'contact.form.email.placeholder' | translate"
+        [attr.aria-label]="'contact.form.email.aria' | translate"
         [attr.aria-invalid]="f.email.invalid && (f.email.touched || submitted) ? true : null"
         [attr.aria-describedby]="f.email.invalid ? 'email-error' : null" />
 
         @if (f.email.touched && f.email.invalid) {
         <div class="field-error" id="email-error" aria-live="polite">
-            @if (f.email.errors?.['required']) { <small>E-Mail is required.</small> }
-            @if (f.email.errors?.['email'])    { <small>Please enter a valid E-Mail.</small> }
+            @if (f.email.errors?.['required']) { <small>{{ 'contact.errors.email.required' | translate }}</small> }
+            @if (f.email.errors?.['email'])    { <small>{{ 'contact.errors.email.format'   | translate }}</small> }
         </div>
         }
 
         <!-- MESSAGE -->
         <textarea
         formControlName="message"
-        placeholder="Your Message"
-        aria-label="Your Message"
+        [placeholder]="'contact.form.message.placeholder' | translate"
+        [attr.aria-label]="'contact.form.message.aria' | translate"
         [attr.aria-invalid]="f.message.invalid && (f.message.touched || submitted) ? true : null"
         [attr.aria-describedby]="f.message.invalid ? 'message-error' : null"></textarea>
 
         @if (f.message.touched && f.message.invalid) {
         <div class="field-error" id="message-error" aria-live="polite">
-            @if (f.message.errors?.['required'])  { <small>message is required.</small> }
-            @if (f.message.errors?.['minlength']) { <small>Minimum 10 characters.</small> }
+            @if (f.message.errors?.['required'])  { <small>{{ 'contact.errors.message.required'   | translate }}</small> }
+            @if (f.message.errors?.['minlength']) { <small>{{ 'contact.errors.message.minlength' | translate:{ min: f.message.errors?.['minlength']?.requiredLength } }}</small> }
         </div>
         }
 
@@ -66,24 +67,25 @@
             id="subscribe"
             formControlName="consent"
             [attr.aria-describedby]="f.consent.invalid ? 'consent-error' : null" />
-        <label>
-            I`ve read the 
-            <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my data as outlined.
-        </label>
+            <label>
+                    {{ 'contact.form.consent.prefix' | translate }}
+                    <a routerLink="/privacy-policy">{{ 'contact.form.consent.link' | translate }}</a>
+                    {{ 'contact.form.consent.suffix' | translate }}
+            </label>
         </div>
 
         @if (f.consent.touched && f.consent.invalid) {
         <div class="field-error" id="consent-error" aria-live="polite">
-            <small>Please confirm privacy policy.</small>
+            <small>{{ 'contact.errors.consent.required' | translate }}</small>
         </div>
         }
 
         <button class="message-btn" type="submit" [disabled]="form.invalid || form.pending">
-        Send Message
+        {{ 'contact.form.submit' | translate }}
         </button>
     </form>
 
-    <a class="arrow-top" href="#top">
-        <img src="./images/arrow-top.png" alt="">
+    <a class="arrow-top" href="#top" [attr.aria-label]="'contact.backToTopAria' | translate">
+        <img src="./images/arrow-top.png" [attr.alt]="'contact.icons.topAlt' | translate">
     </a>
 </div>

@@ -1,21 +1,23 @@
 <footer>
-    <a class="logo" href="#">
-        <img src="./images/ao_logo.png" alt="">
-        <p> &#169; Adem Oencue 2025</p>
+    <a class="logo" href="#" [attr.aria-label]="'footer.homeAria' | translate">
+        <img src="./images/ao_logo.png" [attr.alt]="'footer.logoAlt' | translate">
+        <p>&#169; {{ 'footer.copy' | translate:{ name: ('hero.name' | translate), year: 2025 } }}</p>
     </a>
 
     <div class="social-media">
         <div class="icons" >
-        <a href="" target="_blank">
-            <img src="./images/icons/github-icon.png" alt="Github">
+        <a href="" target="_blank" [attr.aria-label]="'footer.socials.githubAria' | translate">
+            <img src="./images/icons/github-icon.png" [attr.alt]="'footer.socials.githubAlt' | translate">
         </a>
-        <a href="" target="_blank">
-            <img src="./images/icons/email-icon.png" alt="Email">
+        <a href="" target="_blank" [attr.aria-label]="'footer.socials.emailAria' | translate">
+            <img src="./images/icons/email-icon.png" [attr.alt]="'footer.socials.emailAlt' | translate" >
         </a>
-        <a href="" target="_blank">
-            <img src="./images/icons/link-icon.png" alt="LinkedIn">
+        <a href="" target="_blank"  [attr.aria-label]="'footer.socials.linkedinAria' | translate">
+            <img src="./images/icons/link-icon.png" [attr.alt]="'footer.socials.linkedinAlt' | translate">
         </a>
         </div>
-        <a class="legal-notice" routerLink="/legal-notice">Legal notice</a>
+        <a class="legal-notice" routerLink="/legal-notice" [attr.aria-label]="'footer.legalNoticeAria' | translate">
+            {{ 'footer.legalNotice' | translate }}
+        </a>
     </div>
 </footer>

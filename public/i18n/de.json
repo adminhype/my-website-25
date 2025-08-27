@@ -1,16 +1,180 @@
     {
         "hero": {
             "title": {
-                "top": "Gesamt",
+                "top": "Software",
                 "bottom": "Entwickler"
             },
-            "name": "Adem Oencue",
+            "name": "Adem Öncü",
             "cta": "Nachricht senden",
-            "emailAria": "E-Mail an {name}",
+            "emailAria": "E-Mail an {{name}}",
             "scroll": {
                 "line1": "Scroll",
                 "line2": "unten"
             },
             "arrowAlt": "Pfeil nach unten"
+        },
+        "nav": {
+            "about": "Über mich",
+            "skills": "Fähigkeiten",
+            "portfolio": "Portfolio"
+        },
+        "header": {
+            "homeAria": "Zur Startseite",
+            "logoAlt": "Logo",
+            "lang": {
+                "ariaLabel": "Sprache"
+            },
+            "burger": {
+                "open": "Hauptmenü öffnen",
+                "close": "Hauptmenü schließen",
+                "openIconAlt": "Symbol: Menü öffnen",
+                "closeIconAlt": "Symbol: Menü schließen"
+            },
+            "menu": {
+                "ariaLabel": "Hauptmenü",
+                "aboutAria": "Zu Über mich",
+                "skillsAria": "Zu Fähigkeiten",
+                "portfolioAria": "Zu Portfolio"
+            },
+            "socials": {
+                "cta": "Schreib mir!",
+                "emailLinkAria": "E-Mail an {{email}} öffnen",
+                "githubAlt": "GitHub",
+                "githubAria": "Zu GitHub",
+                "emailAlt": "E-Mail",
+                "emailAria": "E-Mail schreiben",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Zu LinkedIn"
+            }
+        },
+        "about": {
+            "title": "Über mich",
+            "p1": "Hallo aus Bremen. Ich bin auf dem Weg zum Full-Stack-Entwickler – aus einem langjährigen Hobby wird ein Beruf. Mir sind klare, pragmatische Lösungen und stetiger Fortschritt wichtig.",
+            "meta": "Bremen / 28 / Deutsch / Kurdische Wurzeln",
+            "p2": "Offen für Junior-/Entry-Level-Möglichkeiten. Ich lerne schnell, bringe mich ein und wachse gern im Team. Wenn mein Profil passt, lass uns …",
+            "cta": "sprechen ↓",
+            "ctaAria": "Zum Kontaktbereich springen",
+            "imageAlt": "Porträt von {{name}}, lächelnd"
+        },
+        "skills": {
+            "title": "Meine Fähigkeiten",
+            "diagArrowLeftAlt": "Diagonalpfeil nach links",
+            "diagArrowRightAlt": "Diagonalpfeil nach rechts",
+            "items": {
+                "angular": {
+                    "label": "Angular"
+                },
+                "ts": {
+                    "label": "TypeScript"
+                },
+                "js": {
+                    "label": "JavaScript"
+                },
+                "html": {
+                    "label": "HTML"
+                },
+                "css": {
+                    "label": "CSS"
+                },
+                "git": {
+                    "label": "Git"
+                },
+                "firebase": {
+                    "label": "Firebase"
+                },
+                "scrum": {
+                    "label": "Scrum"
+                },
+                "rest": {
+                    "label": "REST-API"
+                },
+                "material": {
+                    "label": "Material Design"
+                }
+            }
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "Von der Idee zur Wirkung: Projekte aus meinem Weg als angehender Full-Stack-Entwickler. Klicke für Details – Feedback willkommen.",
+            "icons": {
+                "rotateAlt": "Rotierender Pfeil"
+            },
+            "cta": {
+                "details": "Details ansehen",
+                "detailsAria": "Details zu {{name}} anzeigen"
+            },
+            "countAria": "Projekt {{index}} von {{total}}",
+            "items": {
+                "join": {
+                    "title": "Join",
+                    "stack": "Angular | TypeScript | HTML | CSS | Firebase",
+                    "desc": "Task-Manager, inspiriert vom Kanban-System …",
+                    "imageAlt": "Portfolio-Projekt: {{name}}"
+                }
+            }
+        },
+        "contact": {
+            "title": "Was geht?",
+            "lead": "Erzähl mir kurz von deiner Rolle oder deinem Projekt. Ich antworte zeitnah.",
+            "sublead": "Lass uns connecten und gemeinsam etwas Großartiges bauen!",
+            "backToTopAria": "Zurück nach oben",
+            "icons": {
+                "diagLeftAlt": "Diagonalpfeil nach links",
+                "topAlt": "Pfeil nach oben"
+            },
+            "form": {
+                "name": {
+                    "placeholder": "Dein Name",
+                    "aria": "Dein Name"
+                },
+                "email": {
+                    "placeholder": "Deine E-Mail",
+                    "aria": "Deine E-Mail"
+                },
+                "message": {
+                    "placeholder": "Deine Nachricht",
+                    "aria": "Deine Nachricht"
+                },
+                "consent": {
+                    "prefix": "Ich habe die",
+                    "link": "Datenschutzerklärung",
+                    "suffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+                },
+                "submit": "Nachricht senden",
+                "success": "Nachricht gesendet – danke!",
+                "error": "Uups, etwas ist schiefgelaufen."
+            },
+            "errors": {
+                "name": {
+                    "required": "Name ist erforderlich.",
+                    "minlength": "Mindestens {{min}} Zeichen."
+                },
+                "email": {
+                    "required": "E-Mail ist erforderlich.",
+                    "format": "Bitte eine gültige E-Mail eingeben."
+                },
+                "message": {
+                    "required": "Nachricht ist erforderlich.",
+                    "minlength": "Mindestens {{min}} Zeichen."
+                },
+                "consent": {
+                    "required": "Bitte bestätige die Datenschutzerklärung."
+                }
+            }
+        },
+        "footer": {
+            "homeAria": "Zur Startseite",
+            "logoAlt": "Logo",
+            "copy": "{{name}} {{year}}",
+            "legalNotice": "Impressum",
+            "legalNoticeAria": "Zum Impressum",
+            "socials": {
+                "githubAlt": "GitHub",
+                "githubAria": "Zu GitHub",
+                "emailAlt": "E-Mail",
+                "emailAria": "E-Mail schreiben",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Zu LinkedIn"
+            }
         }
     }

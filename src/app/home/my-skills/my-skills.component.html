@@ -1,20 +1,22 @@
         <div id="arrow-right" >
-            <img src="./images/arrow-left-diagonal.png" alt="">
+            <img src="./images/arrow-left-diagonal.png" 
+            [attr.alt]="'skills.diagArrowLeftAlt' | translate">
         </div>
 
         <div class="skills-list">
             <div class="header-skills">
-                <h2>My skills</h2>
+                <h2>{{ 'skills.title' | translate }}</h2>
             </div>
                 <ul>
                     @for (skill of skills; track skill.key) {
                     <li>
-                        <img src="{{ basePath }}/{{ skill.icon }}" alt="{{ skill.label }}" />
-                        <span>{{ skill.label }}</span>
+                        <img [src]="basePath + '/' + skill.icon"
+                        [attr.alt]="('skills.items.' + skill.key + '.label') | translate">
+                        <span>{{ ('skills.items.' + skill.key + '.label') | translate }}</span>
                     </li>
                     }
                 </ul>
         </div>
         <div id="arrow-left" >
-            <img src="./images/arrow-diagonal.png" alt="">
+            <img src="./images/arrow-diagonal.png" [attr.alt]="'skills.diagArrowRightAlt' | translate">
         </div>

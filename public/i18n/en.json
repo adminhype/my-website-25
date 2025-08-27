@@ -12,5 +12,169 @@
                 "line2": "Down"
             },
             "arrowAlt": "Arrow down"
+        },
+        "nav": {
+            "about": "About me",
+            "skills": "My Skills",
+            "portfolio": "Portfolio"
+        },
+        "header": {
+            "homeAria": "Go home",
+            "logoAlt": "Logo",
+            "lang": {
+                "ariaLabel": "Language"
+            },
+            "burger": {
+                "open": "Open main menu",
+                "close": "Close main menu",
+                "openIconAlt": "Icon: open menu",
+                "closeIconAlt": "Icon: close menu"
+            },
+            "menu": {
+                "ariaLabel": "Main menu",
+                "aboutAria": "Go to About",
+                "skillsAria": "Go to Skills",
+                "portfolioAria": "Go to Portfolio"
+            },
+            "socials": {
+                "cta": "Get in touch!",
+                "emailLinkAria": "Open email to {{email}}",
+                "githubAlt": "GitHub",
+                "githubAria": "Go to GitHub",
+                "emailAlt": "Email",
+                "emailAria": "Compose email",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Go to LinkedIn"
+            }
+        },
+        "about": {
+            "title": "About me",
+            "p1": "Hello from Bremen. I'm on the path to full-stack development—turning a long-time hobby into a professional role. I value clear, practical solutions and steady progress.",
+            "meta": "Bremen / 28 / German / Kurdish heritage",
+            "p2": "Open to junior/entry-level opportunities. Keep learning fast, contributing, and growing with a team. If my profile fits your needs, let's …",
+            "cta": "Talk ↓",
+            "ctaAria": "Jump to contact section",
+            "imageAlt": "Portrait of {{name}}, smiling"
+        },
+        "skills": {
+            "title": "My skills",
+            "diagArrowLeftAlt": "Diagonal arrow left",
+            "diagArrowRightAlt": "Diagonal arrow right",
+            "items": {
+                "angular": {
+                    "label": "Angular"
+                },
+                "ts": {
+                    "label": "TypeScript"
+                },
+                "js": {
+                    "label": "JavaScript"
+                },
+                "html": {
+                    "label": "HTML"
+                },
+                "css": {
+                    "label": "CSS"
+                },
+                "git": {
+                    "label": "Git"
+                },
+                "firebase": {
+                    "label": "Firebase"
+                },
+                "scrum": {
+                    "label": "Scrum"
+                },
+                "rest": {
+                    "label": "REST API"
+                },
+                "material": {
+                    "label": "Material Design"
+                }
+            }
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "From idea to impact: projects from my journey as an aspiring full-stack developer. Click through for details — feedback welcome.",
+            "icons": {
+                "rotateAlt": "Rotating arrow"
+            },
+            "cta": {
+                "details": "View details",
+                "detailsAria": "View details for {{name}}"
+            },
+            "countAria": "Project {{index}} of {{total}}",
+            "items": {
+                "join": {
+                    "title": "Join",
+                    "stack": "Angular | TypeScript | HTML | CSS | Firebase",
+                    "desc": "Task manager inspired by the Kanban system …",
+                    "imageAlt": "Portfolio project: {{name}}"
+                }
+            }
+        },
+        "contact": {
+            "title": "What's up?",
+            "lead": "Tell me about your role or project. I'll reply promptly.",
+            "sublead": "Let's connect and create something amazing together!",
+            "backToTopAria": "Back to top",
+            "icons": {
+                "diagLeftAlt": "Diagonal arrow left",
+                "topAlt": "Arrow up"
+            },
+            "form": {
+                "name": {
+                    "placeholder": "Your Name",
+                    "aria": "Your Name"
+                },
+                "email": {
+                    "placeholder": "Your Email",
+                    "aria": "Your Email"
+                },
+                "message": {
+                    "placeholder": "Your Message",
+                    "aria": "Your Message"
+                },
+                "consent": {
+                    "prefix": "I've read the",
+                    "link": "privacy policy",
+                    "suffix": "and agree to the processing of my data as outlined."
+                },
+                "submit": "Send Message",
+                "success": "Message sent — thank you!",
+                "error": "Oops, something went wrong."
+            },
+            "errors": {
+                "name": {
+                    "required": "Name is required.",
+                    "minlength": "Minimum {{min}} characters."
+                },
+                "email": {
+                    "required": "Email is required.",
+                    "format": "Please enter a valid email."
+                },
+                "message": {
+                    "required": "Message is required.",
+                    "minlength": "Minimum {{min}} characters."
+                },
+                "consent": {
+                    "required": "Please confirm privacy policy."
+                }
+            }
+        },
+        "footer": {
+            "homeAria": "Go home",
+            "logoAlt": "Logo",
+            "copy": "{{name}} {{year}}",
+            "legalNotice": "Legal notice",
+            "legalNoticeAria": "Go to legal notice",
+            "socials": {
+                "githubAlt": "GitHub",
+                "githubAria": "Go to GitHub",
+                "emailAlt": "Email",
+                "emailAria": "Compose email",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Go to LinkedIn"
+            }
         }
     }

@@ -1,21 +1,23 @@
     <div id="aboutme-container">
         <div class="aboutme-text">
-            <h2>About me</h2>
-            <p> Hello from Bremen. I'm on the path to full-stack development—turning a long-time hobby into a professional role.
-                    I value clear, practical solutions and steady progress.
-                </p>
-                <p>Bremen / 28 / German / Kurdish heritage </p>
-            <br>
-            <p>  Open to junior/entry-level opportunities. Keep learning fast, contributing, and growing with a team.
-                    If my profile fits your needs, let's ....</p>
+        <h2>{{ 'about.title' | translate }}</h2>
+
+            <p>{{ 'about.p1' | translate }}</p>
+
+            <p>{{ 'about.meta' | translate }}</p>
+
+            <br />
+
+            <p>{{ 'about.p2' | translate }}</p>
+
             <div class="lets-talk-container">
-                <a class="lets-talk" href="#contact-header">Talk ↓</a>
+                <a class="lets-talk" href="#contact-header" [attr.aria-label]="'about.ctaAria' | translate"> {{ 'about.cta' | translate }}</a>
             </div>
 
         </div>
         <div class="aboutme-wrapper" >  
             <div class="aboutme-image">
-                <img src="./images/smile_v2.png" alt="">
+                <img src="./images/smile_v2.png"  [attr.alt]="'about.imageAlt' | translate:{ name: ('hero.name' | translate) }">
             </div>
         </div>
     </div>

@@ -1,9 +1,9 @@
 import { Component} from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

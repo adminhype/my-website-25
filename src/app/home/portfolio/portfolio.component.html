@@ -1,27 +1,27 @@
     <div class="portfolio-header">
-    <h2>Portfolio</h2>
-    <p>From idea to impact: projects from my journey as an aspiring fullstack developer. <br>
-    Click through for details, feedback welcome.</p>
+        <h2>{{ 'portfolio.title' | translate }}</h2>
+        <p>{{ 'portfolio.subtitle' | translate }}</p>
     </div>
 
     <div class="portfolio-container">
     <div class="portfolio-item">
-        <img src="./images/Property 1=join photo.png" alt="Portfolio Project">
+        <img src="./images/Property 1=join photo.png" [attr.alt]="'portfolio.items.join.imageAlt' | translate:{ name: ('portfolio.items.join.title' | translate) }">
             <div class="overlay-arrow">
-                <img src="./images/arrow-rotate.png" alt="">
+                <img src="./images/arrow-rotate.png" [attr.alt]="'portfolio.icons.rotateAlt' | translate" >
             </div>
     </div>
     
         <div class="portfolio-overlay">
-        <h3>Join</h3>
+            <h3>{{ 'portfolio.items.join.title' | translate }}</h3>
         <div class="stack-title">
-            <span>Angular | TypeScript | HTML | CSS | Firebase</span>
+            <span>{{ 'portfolio.items.join.stack' | translate }}</span>
         </div>
-        <p>Task manager inspired by the Kanban System...</p>
+        <p>{{ 'portfolio.items.join.desc' | translate }}</p>
 
-        <button class="text-btn" >EMPTY</button>
+        <button class="text-btn" [attr.aria-label]="'portfolio.cta.detailsAria' | translate:{ name: ('portfolio.items.join.title' | translate) }">
+            {{ 'portfolio.cta.details' | translate }}</button>
         </div>
-        <span class="portfolio-count">01/05</span>
+        <span class="portfolio-count" [attr.aria-label]="'portfolio.countAria' | translate:{ index: 1, total: 5 }">01/05</span>
 
 
 

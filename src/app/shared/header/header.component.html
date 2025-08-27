@@ -37,15 +37,15 @@
 
         <div class="menu-items">
           <a href="#hero-side-content" (click)="closeMenu()">
-            About me
+              {{ 'nav.about' | translate }}
             <span class="line"></span>
           </a>
           <a href="#arrow-right" (click)="closeMenu()">
-            My Skills
+            {{ 'nav.skills' | translate }}
             <span class="line"></span>
           </a>
           <a href="#arrow-left" (click)="closeMenu()">
-            Portfolio
+            {{ 'nav.portfolio' | translate }}
             <span class="line"></span>
           </a>
         </div>
@@ -55,7 +55,7 @@
 
             <div class="socials-content">
               <p>
-                get in touch!
+                {{ 'header.socials.cta' | translate }}
                 <a href="mailto:adem@oencue.com">adem&#64;oencue.com</a>
               </p>
 

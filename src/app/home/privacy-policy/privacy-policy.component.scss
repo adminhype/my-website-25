@@ -3,10 +3,6 @@
     justify-content: end;
     padding: 1rem 3rem;
 
-    @media(min-width: 1024px) {
-        display: none;
-    }
-
     @media(max-width: 768px) {
         padding: 1rem;
 

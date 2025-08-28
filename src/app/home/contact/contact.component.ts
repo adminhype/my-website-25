@@ -3,6 +3,8 @@ import { FormBuilder, ReactiveFormsModule, Validators, FormGroup} from '@angular
 import { ContactForm, ContactLoad } from '../../interfaces/contact';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +16,7 @@ export class ContactComponent {
   submitted = false;
 
   private fb = inject(FormBuilder);
+  private draftKey = 'contactForm';
 
   readonly form: FormGroup<ContactForm> = this.fb.nonNullable.group({
     name:    this.fb.nonNullable.control('', [Validators.required, Validators.minLength(2)]),
@@ -22,9 +25,40 @@ export class ContactComponent {
     consent: this.fb.nonNullable.control(false, { validators: Validators.requiredTrue }),
   });
 
-  get f() { return this.form.controls; }
+    constructor() {
+      this.restoreDraft();
+      this.initAutosave();
+  }
+    get f() { return this.form.controls; }
 
-  onSubmit(): void {
+    private restoreDraft(){
+      const saved = sessionStorage.getItem(this.draftKey);
+      if (!saved) return;
+      try {
+        const parsed = JSON.parse(saved) as Partial<ContactLoad>;
+        this.form.patchValue(parsed, { emitEvent: false });
+      } catch {
+        sessionStorage.removeItem(this.draftKey);
+      }
+    }
+
+  private initAutosave(){
+    this.form.valueChanges
+      .pipe(debounceTime(200), takeUntilDestroyed())
+      .subscribe(() => this.saveDraft());
+  }
+
+  private saveDraft(){
+    const { name, email, message, consent } = this.form.getRawValue();
+    const draft: ContactLoad = { name, email, message, consent };
+    sessionStorage.setItem(this.draftKey, JSON.stringify(draft));
+  }
+
+  private clearDraft(){
+    sessionStorage.removeItem(this.draftKey);
+  }
+
+  onSubmit(){
     this.submitted = true;
     if (this.form.invalid) {
       this.form.markAllAsTouched();
@@ -32,8 +66,8 @@ export class ContactComponent {
     }
     const data: ContactLoad = this.form.getRawValue();
     console.log('Form data:', data);
-    this.form.reset({ name: '', email: '', message: '', consent: false });
+    this.form.reset({ name: '', email: '', message: '', consent: false }, { emitEvent: false });
+    this.clearDraft();
     this.submitted = false;
   }
-
 }

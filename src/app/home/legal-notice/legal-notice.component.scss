@@ -59,6 +59,14 @@
         font-size: 1.2rem;
     }
 
+    strong {
+        color: #5988FF;
+    }
+
+    a {
+        color: #5988FF;
+    }
+
     .legal-notice-details {
         margin-top: 2rem;
 
@@ -70,7 +78,6 @@
             font-size: 1.2rem;
             color: #5988FF;
         }
-
     }
 
     @media(max-width: 1024px) {

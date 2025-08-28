@@ -51,8 +51,8 @@
             "title": "Über mich",
             "p1": "Hallo aus Bremen. Ich bin auf dem Weg zum Full-Stack-Entwickler – aus einem langjährigen Hobby wird ein Beruf. Mir sind klare, pragmatische Lösungen und stetiger Fortschritt wichtig.",
             "meta": "Bremen / 28 / Deutsch / Kurdische Wurzeln",
-            "p2": "Offen für Junior-/Entry-Level-Möglichkeiten. Ich lerne schnell, bringe mich ein und wachse gern im Team. Wenn mein Profil passt, lass uns …",
-            "cta": "sprechen ↓",
+            "p2": "Offen für Junior-/Entry-Level-Möglichkeiten. Ich lerne schnell, bringe mich ein und wachse gern im Team. Wenn mein Profil passt, lass uns sprechen.",
+            "cta": "Kontakt",
             "ctaAria": "Zum Kontaktbereich springen",
             "imageAlt": "Porträt von {{name}}, lächelnd"
         },
@@ -206,7 +206,7 @@
         "privacy": {
             "backAria": "Zur Startseite zurück",
             "backAlt": "Zurück-Pfeil",
-            "title": "Datenschutzerklärung",
+            "title": "Datenschutz",
             "general": {
                 "title": "Allgemeine Informationen",
                 "text": "Der Schutz deiner personenbezogenen Daten ist mir wichtig. Diese Website ist ein privates, nicht-kommerzielles Portfolio und richtet sich nach den geltenden Datenschutzbestimmungen (DSGVO)."

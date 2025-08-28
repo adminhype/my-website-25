@@ -18,11 +18,25 @@
         </div>
         <p>{{ 'portfolio.items.join.desc' | translate }}</p>
 
-        <button class="text-btn" [attr.aria-label]="'portfolio.cta.detailsAria' | translate:{ name: ('portfolio.items.join.title' | translate) }">
-            {{ 'portfolio.cta.details' | translate }}</button>
+            <div class="btn-group">
+                <a 
+                    class="text-btn" 
+                    href="https://github.com/adminhype/my-website-25" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    [attr.aria-label]="'portfolio.cta.githubAria' | translate:{ name: ('portfolio.items.join.title' | translate) }">
+                    {{ 'portfolio.cta.github' | translate }}
+                    </a>
+
+                    <a 
+                    class="text-btn" 
+                    href="https://deine-live-demo-url.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    [attr.aria-label]="'portfolio.cta.liveAria' | translate:{ name: ('portfolio.items.join.title' | translate) }">
+                    {{ 'portfolio.cta.live' | translate }}
+                    </a>
+            </div>
         </div>
         <span class="portfolio-count" [attr.aria-label]="'portfolio.countAria' | translate:{ index: 1, total: 5 }">01/05</span>
-
-
-
     </div>

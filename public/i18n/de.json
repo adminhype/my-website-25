@@ -100,8 +100,10 @@
                 "rotateAlt": "Rotierender Pfeil"
             },
             "cta": {
-                "details": "Details ansehen",
-                "detailsAria": "Details zu {{name}} anzeigen"
+                "github": "Github",
+                "live": "Demo Ansehen",
+                "githubAria": "Öffne den Quellcode von {{name}} auf GitHub",
+                "liveAria": "Öffne die Live-Demo von {{name}}"
             },
             "countAria": "Projekt {{index}} von {{total}}",
             "items": {

@@ -100,8 +100,10 @@
                 "rotateAlt": "Rotating arrow"
             },
             "cta": {
-                "details": "View details",
-                "detailsAria": "View details for {{name}}"
+                "github": "View Code",
+                "live": "Live Demo",
+                "githubAria": "Open the source code of {{name}} on GitHub",
+                "liveAria": "Open the live demo of {{name}}"
             },
             "countAria": "Project {{index}} of {{total}}",
             "items": {

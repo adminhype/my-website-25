@@ -1,45 +1,40 @@
 <section>
     <div class="content-wrapper">
-        <a routerLink="/home" class="back-button">
-            <img src="./images/arrow-back.png" alt="">
+        <a routerLink="/home" class="back-button" 
+        [attr.aria-label]="'legal.backAria' | translate">
+            <img src="./images/arrow-back.png" [attr.alt]="'legal.backAlt' | translate">
         </a>
-        <div id="legal-container">
+        <div id="legal-container">   
             <div class="legal-notice">
-                <h2>Legal Notice</h2>
-                <h4>Imprint</h4>
-                <p>Adem Oencue<br />
-                Musterstra&szlig;e 111<br />
-                Geb&auml;ude 44<br />
-                28779 Bremen</p>
-
-                <p>Telefon: +49 123 44 55 66<br />
-                E-Mail: adem.oencue&#64;musterfirma.de</p>
+                <h2>{{ 'legal.title' | translate }}</h2>
+                <h4>{{ 'legal.subtitle' | translate }}</h4>
+                <p>
+                    {{ 'legal.intro.purpose' | translate }}
+                    <br />
+                    {{ 'legal.intro.responsible' | translate }}
+                    <br />
+                    <strong>{{ 'hero.name' | translate }}</strong>
+                    <br />
+                    {{ 'legal.intro.emailLabel' | translate }}
+                    <a [href]="'mailto:' + ('legal.contactEmail' | translate)">
+                        {{ 'legal.contactEmail' | translate }}
+                    </a>
+                </p>
 
                 <div class="legal-notice-details">
-                    <div class="legal-notice-text" >
-                    <h5>Responsible for the content according to § 55 Abs. 2 RStV</h5>
-                        Adem Oencue, Musterstraße 111, Gebäude 44, 28779 Bremen
+                    <div class="legal-notice-text">
+                        <h5>{{ 'legal.disclaimer.title' | translate }}</h5>
+                        <p>{{ 'legal.disclaimer.text' | translate }}</p>
                     </div>
 
                     <div class="legal-notice-text">
-                                <h5>Disclaimer</h5>
-                        The content of this website has been created with the utmost care. However, I cannot guarantee the contents' accuracy, completeness, or topicality. According to statutory provisions, I am furthermore responsible for my own content on these web pages. In this matter, please note that I am not obliged to monitor transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. My obligations to remove or block the use of information under generally applicable laws remain unaffected by this.
-                            </div>
-
-                    <div class="legal-notice-text">
-                        <h5>Liability for Links</h5>
-                        My site contains links to external websites, over which I have no control. Therefore, I cannot accept any responsibility for their content. The respective provider or operator of the linked pages is always responsible for the content of such pages. Illegal contents were not recognizable at the time of linking. However, a permanent control of the linked pages is unreasonable without concrete evidence of a violation of the law. Upon notification of violations, I will remove such links immediately.
+                        <h5>{{ 'legal.links.title' | translate }}</h5>
+                        <p>{{ 'legal.links.text' | translate }}</p>
                     </div>
 
                     <div class="legal-notice-text">
-                        <h5>Copyright</h5>
-                        The content and works created by the website operator on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of copyright law shall require the prior written consent of its respective author or creator.
-                    </div>
-                    
-                    <div class="legal-notice-text">
-                        <h5>Data Protection</h5>
-                        The use of my website is generally possible without providing personal data. As far as personal data (e.g., name, address, or email addresses) is collected on my pages, this is always done on a voluntary basis as far as possible. This data will not be disclosed to third parties without your explicit consent.
-                        Please note that data transmission over the Internet (e.g., communication by e-mail) may have security gaps. Complete protection of data against access by third parties is not possible.
+                        <h5>{{ 'legal.copyright.title' | translate }}</h5>
+                        <p>{{ 'legal.copyright.text' | translate }}</p>
                     </div>
                 </div>
             </div>

@@ -34,14 +34,13 @@
         [class.open]="isMenuOpen"
         role="dialog"
         aria-modal="true">
-
         <div class="menu-items">
-          <a href="#hero-side-content" (click)="closeMenu()">
-              {{ 'nav.about' | translate }}
-            <span class="line"></span>
-          </a>
           <a href="#arrow-right" (click)="closeMenu()">
             {{ 'nav.skills' | translate }}
+            <span class="line"></span>
+          </a>
+          <a href="#hero-side-content" (click)="closeMenu()">
+              {{ 'nav.about' | translate }}
             <span class="line"></span>
           </a>
           <a href="#arrow-left" (click)="closeMenu()">
@@ -56,18 +55,18 @@
             <div class="socials-content">
               <p>
                 {{ 'header.socials.cta' | translate }}
-                <a href="mailto:adem@oencue.com">adem&#64;oencue.com</a>
+                <a href="mailto:dev@ademoencue.de">dev&#64;ademoencue.de</a>
               </p>
 
                 <div class="social-media">
                     <div class="icons">
-                      <a href="" target="_blank">
+                      <a href="https://github.com/adminhype" target="_blank" rel="noopener noreferrer">
                         <img src="./images/icons/github-icon.png" alt="Github">
                       </a>
-                      <a href="" target="_blank">
+                      <a href="mailto:dev@ademoencue.de" target="_blank" rel="noopener noreferrer">
                         <img src="./images/icons/email-icon.png" alt="Email">
                       </a>
-                      <a href="" target="_blank">
+                      <a href="https://www.linkedin.com/in/adem-oencue-9b4588383" target="_blank" rel="noopener noreferrer">
                         <img src="./images/icons/link-icon.png" alt="LinkedIn">
                       </a>
                     </div>

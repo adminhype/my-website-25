@@ -189,7 +189,7 @@
                 "responsible": "Responsible according to § 55 (2) RStV:",
                 "emailLabel": "Email:"
             },
-            "contactEmail": "bewerbung@meine-seite.de",
+            "contactEmail": "dev@ademoencue.de",
             "disclaimer": {
                 "title": "Disclaimer",
                 "text": "The content of this website has been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content. As the operator of this site, I am responsible for my own content in accordance with general laws, but I am not obliged to monitor third-party information provided or stored here or to investigate circumstances that indicate illegal activity."
@@ -216,7 +216,7 @@
                 "text": "The controller responsible for data processing on this website is:",
                 "emailLabel": "Email:"
             },
-            "contactEmail": "bewerbung@meine-seite.de",
+            "contactEmail": "dev@ademoencue.de",
             "hosting": {
                 "title": "Hosting via GitHub Pages",
                 "text": "This website is hosted on GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). When accessing the site, GitHub automatically collects technical information (e.g., IP address, browser type, operating system, access time). This data is processed to ensure security and stability and is automatically deleted after a short period. Data may be transferred to the USA. GitHub has committed to EU data protection standards (including the EU US Data Privacy Framework)."

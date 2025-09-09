@@ -29,14 +29,14 @@
     padding: 0 3rem;
     min-height: 220px;
     background: #000;
-    clip-path: polygon(-2% 0, 135% 62%, 100% 113%, 0 113%);
+    clip-path: polygon(-2% 0, 135% 62%, 100% 122%, 0 122%);
 
     @media(max-width: 1024px) {
-        clip-path: polygon(-2% 0, 181% 86%, 100% 113%, 0 113%);
+        clip-path: polygon(-2% 0, 181% 86%, 100% 122%, 0 122%);
     }
 
     @media(max-width: 640px) {
-        clip-path: polygon(-2% 0, 400% 85%, 100% 113%, 0 113%);
+        clip-path: polygon(-2% 0, 400% 85%, 100% 122%, 0 122%);
         padding: 1rem 0;
     }
 
@@ -51,7 +51,7 @@
             font-size: 4rem;
             color: #fff;
             transform: scaleX(1.5);
-            padding: 0 0 1rem 5rem;
+            padding: 0 0 2rem 5rem;
 
             &:hover {
                 color: #5988FF;
@@ -65,7 +65,7 @@
         @media(max-width: 1024px) {
             h2 {
                 font-size: 2.5rem;
-                padding: 0 0 0 2rem;
+                padding: 0 0 3rem 2rem;
             }
         }
 
@@ -93,6 +93,7 @@
     padding: 1rem 3rem;
     background: #000;
     gap: 1rem;
+    margin: -0.2rem 0;
 
     @media(max-width: 640px) {
         padding: 1rem;

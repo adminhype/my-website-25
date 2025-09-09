@@ -132,6 +132,7 @@
         &:hover {
             opacity: 1;
             text-decoration: underline;
+            font-weight: bold;
         }
 
         @media(max-width: 640px) {

@@ -112,6 +112,18 @@
                     "stack": "Angular | TypeScript | HTML | CSS | Firebase",
                     "desc": "Task manager inspired by the Kanban system …",
                     "imageAlt": "Portfolio project: {{name}}"
+                },
+                "pollo": {
+                    "title": "El-Pollo Loco",
+                    "stack": "JavaScript | HTML | CSS",
+                    "desc": "2D jump & run game based on object-oriented programming.",
+                    "imageAlt": "Screenshot of the El-Pollo Loco jump & run game"
+                },
+                "pokedex": {
+                    "title": "Pokédex",
+                    "stack": "JavaScript | HTML | CSS | API",
+                    "desc": "Pokédex with data from an external API, including detailed view.",
+                    "imageAlt": "Screenshot of the Pokédex project"
                 }
             }
         },

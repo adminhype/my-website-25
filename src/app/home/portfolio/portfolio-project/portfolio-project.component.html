@@ -1,0 +1,33 @@
+    <div class="portfolio-container" [class.reverse]="reversed">
+    <div class="portfolio-item">
+        <img 
+        [src]="project.image" 
+        [attr.alt]="project.i18nKey + '.imageAlt' | translate">
+        <div class="overlay-arrow">
+                <img src="./images/arrow-rotate.png" [attr.alt]="'portfolio.icons.rotateAlt' | translate" >
+        </div>
+    </div>
+
+    <div class="portfolio-overlay">
+        <h3>{{ project.i18nKey + '.title' | translate }}</h3>
+        <div class="stack-title">
+        <span>{{ project.i18nKey + '.stack' | translate }}</span>
+        </div>
+        <p>{{ project.i18nKey + '.desc' | translate }}</p>
+
+        <div class="btn-group">
+        <a class="text-btn" [href]="project.github" target="_blank" rel="noopener noreferrer">
+            {{ 'portfolio.cta.github' | translate }}
+        </a>
+        @if (project.live) {
+            <a class="text-btn" [href]="project.live" target="_blank" rel="noopener noreferrer">
+            {{ 'portfolio.cta.live' | translate }}
+            </a>
+        }
+        </div>
+    </div>
+    <span class="portfolio-count" 
+            [attr.aria-label]="'portfolio.countAria' | translate:{ index: index, total: total }">
+        {{ index }}/{{ total }}
+    </span>
+    </div>

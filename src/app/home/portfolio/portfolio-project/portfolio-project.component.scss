@@ -1,0 +1,255 @@
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 3rem;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 560px;
+
+        >img {
+            width: 100%;
+            object-fit: contain;
+            filter: grayscale(100%);
+            border: solid 3px transparent;
+
+            &:hover {
+                filter: grayscale(0%);
+                border: solid 3px black;
+            }
+
+            @media(max-width: 1024px) {
+                filter: grayscale(0%);
+            }
+        }
+
+        .overlay-arrow {
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+            background: black;
+            border-radius: 50%;
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+
+            img {
+                width: 42px;
+                height: 42px;
+                object-fit: contain;
+            }
+        }
+
+        &:hover .overlay-arrow {
+            opacity: 1;
+            animation: rotateArrow 0.5s ease forwards;
+        }
+
+        @media(max-width: 1320px) {
+            max-width: 480px;
+        }
+
+
+
+        @media(max-width: 640px) {
+            .overlay-arrow {
+                margin: 1rem;
+                width: 48px;
+                height: 48px;
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .portfolio-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 0.5rem;
+        opacity: 0;
+        transition: all 0.4s ease;
+        pointer-events: none;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .stack-title {
+            font-size: 1.2rem;
+            color: #5988FF;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            width: auto;
+
+            .text-btn {
+                font-size: 1rem;
+                padding: 1rem;
+                border: solid 3px black;
+                background: transparent;
+                cursor: pointer;
+                white-space: nowrap;
+                color: #000;
+
+
+                &:hover {
+                    animation: spread 0.5s ease-out forwards;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @media(max-width: 1320px) {
+            margin-left: 2rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .stack-title {
+                font-size: 1rem;
+            }
+
+            .btn-group {
+                gap: 1.2rem;
+            }
+
+            .text-btn {
+                padding: 0.25rem 0.75rem;
+            }
+        }
+
+        // @media(max-width: 1200px) {
+        //     margin-left: 4rem;
+        // }
+
+        // @media(max-width: 768px) {
+        //     margin: 0 10rem 0 0;
+        // }
+
+        @media(max-width: 640px) {
+            margin: 0 3rem 0 0;
+        }
+    }
+
+    &:hover:not(.reverse) .portfolio-overlay {
+        animation: slideInLeft 1.2s ease forwards;
+    }
+
+    &.reverse:hover .portfolio-overlay {
+        animation: slideInRight 1.2s ease forwards;
+    }
+
+    &:hover .portfolio-overlay {
+        opacity: 0;
+        pointer-events: auto;
+    }
+
+    @media(max-width: 1024px) {
+        opacity: 1;
+
+        .portfolio-overlay {
+            pointer-events: auto;
+            opacity: 1;
+        }
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        align-items: start;
+        padding: 1rem;
+
+        &.reverse {
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+
+    .portfolio-count {
+        display: flex;
+        justify-content: end;
+        align-self: start;
+        font-size: 3rem;
+        font-weight: bold;
+
+        @media (max-width: 768px) {
+            order: -1;
+            align-self: end;
+            margin-bottom: 1rem;
+        }
+
+        @media(max-width: 640px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+//button overlay
+@keyframes spread {
+    0% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: scaleX(1.2);
+        transform-origin: left;
+    }
+}
+
+// arrow overlay
+@keyframes rotateArrow {
+    0% {
+        transform: translateY(-50%) rotate(160deg) scale(0.4);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(0deg) scale(1);
+    }
+}
+
+//img slide
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+//img slide
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -7,6 +7,32 @@
 
     &.reverse {
         flex-direction: row-reverse;
+
+        .portfolio-overlay {
+            align-items: end;
+            text-align: right;
+            padding-right: 2rem;
+
+            .btn-group {
+                justify-content: end;
+            }
+        }
+
+        .portfolio-count {
+            justify-content: start;
+            align-self: start;
+        }
+
+        .overlay-arrow {
+            right: auto;
+            left: -25px;
+        }
+
+        @media(max-width: 768px) {
+            .portfolio-overlay {
+                padding: 0;
+            }
+        }
     }
 
     .portfolio-item {
@@ -58,8 +84,6 @@
         @media(max-width: 1320px) {
             max-width: 480px;
         }
-
-
 
         @media(max-width: 640px) {
             .overlay-arrow {
@@ -120,7 +144,7 @@
         }
 
         @media(max-width: 1320px) {
-            margin-left: 2rem;
+            padding-left: 2rem;
 
             h3 {
                 font-size: 1.5rem;
@@ -139,16 +163,8 @@
             }
         }
 
-        // @media(max-width: 1200px) {
-        //     margin-left: 4rem;
-        // }
-
-        // @media(max-width: 768px) {
-        //     margin: 0 10rem 0 0;
-        // }
-
-        @media(max-width: 640px) {
-            margin: 0 3rem 0 0;
+        @media(max-width: 768px) {
+            padding: 0;
         }
     }
 

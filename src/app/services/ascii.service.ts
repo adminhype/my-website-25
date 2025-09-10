@@ -12,7 +12,7 @@ export class AsciiService {
            AAA AAA        
           AAA   AAA       
          AAA     AAA
-        /---HELLO---\\
+        AAAAAAAAAAAAA
        AAA         AAA    
       AAA           AAA   
      AAA             AAA

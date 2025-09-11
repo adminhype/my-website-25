@@ -181,9 +181,9 @@
         .message-btn {
             font-size: 1rem;
             padding: 1rem 2rem;
-            border: solid 3px;
+            border: solid 3px #fff;
             background: #000;
-            color: grey;
+            color: #fff;
             cursor: pointer;
 
             &:hover {
@@ -191,6 +191,19 @@
                 color: #fff;
                 animation: spread 0.3s ease-in-out forwards;
                 font-weight: bold;
+            }
+        }
+
+        .message-btn.is-disabled {
+            border-color: #c2c2c259;
+            color: #c2c2c259;
+            cursor: not-allowed;
+
+            &:hover {
+                border-color: #c2c2c259;
+                color: #ffffff59;
+                animation: none;
+                font-weight: normal;
             }
         }
     }
@@ -247,7 +260,6 @@
 
     .message-btn:disabled {
         animation: none;
-        cursor: not-allowed;
     }
 
     .privacy-policy {
@@ -276,6 +288,81 @@
                 height: 24px;
             }
         }
+    }
+}
+
+.feedback-background {
+    position: fixed;
+    inset: 0;
+    background: #00000059;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 28;
+}
+
+.feedback-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #5988FF;
+    color: #fff;
+    border: solid 3px #fff;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    animation: bounceIn 0.5s ease-out;
+    gap: 1rem;
+
+    @media(max-width: 768px) {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    @media(max-width: 640px) {
+        padding: 1rem 0;
+    }
+}
+
+.feedback-image {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+
+    @media(max-width: 1024px) {
+        height: 240px;
+        width: 240px;
+    }
+
+    @media(max-width: 768px) {
+        height: 180px;
+        width: 180px;
+    }
+
+    @media(max-width: 640px) {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+//keyframes success message
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 

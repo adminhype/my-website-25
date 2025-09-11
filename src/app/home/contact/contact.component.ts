@@ -14,6 +14,7 @@ import { debounceTime } from 'rxjs';
 })
 export class ContactComponent {
   submitted = false;
+  showFeedback = false;
 
   private fb = inject(FormBuilder);
   private draftKey = 'contactForm';
@@ -65,9 +66,16 @@ export class ContactComponent {
       return;
     }
     const data: ContactLoad = this.form.getRawValue();
+    this.showFeedback = true;
     console.log('Form data:', data);
+    setTimeout(() => {
+      this.closeFeedback();
+    }, 4000);
     this.form.reset({ name: '', email: '', message: '', consent: false }, { emitEvent: false });
     this.clearDraft();
     this.submitted = false;
   }
+  closeFeedback() {
+  this.showFeedback = false;
+}
 }

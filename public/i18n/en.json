@@ -155,7 +155,7 @@
                     "suffix": "and agree to the processing of my data as outlined."
                 },
                 "submit": "Send Message",
-                "success": "Message sent — thank you!",
+                "success": "Thank you! I'll reply soon.",
                 "error": "Oops, something went wrong."
             },
             "errors": {

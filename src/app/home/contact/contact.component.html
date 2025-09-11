@@ -79,9 +79,16 @@
         </div>
         }
 
-        <button class="message-btn" type="submit" [disabled]="form.invalid || form.pending">
+        <button class="message-btn" type="submit" [class.is-disabled]="form.invalid || form.pending">
         {{ 'contact.form.submit' | translate }}
         </button>
+        @if (showFeedback) {
+        <div class="feedback-background" (click)="closeFeedback()">
+        <div class="feedback-overlay" role="status" aria-live="polite" (click)="$event.stopPropagation()">
+        <img src="./images/adem-success.png" alt="Success" class="feedback-image" />{{ 'contact.form.success' | translate }}
+        </div>
+        </div>
+        }
     </form>
 
     <a class="arrow-top" href="#top" [attr.aria-label]="'contact.backToTopAria' | translate">

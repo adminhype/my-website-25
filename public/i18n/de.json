@@ -155,7 +155,7 @@
                     "suffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
                 },
                 "submit": "Nachricht senden",
-                "success": "Nachricht gesendet – danke!",
+                "success": "Danke! Ich melde mich bald zurück.",
                 "error": "Uups, etwas ist schiefgelaufen."
             },
             "errors": {

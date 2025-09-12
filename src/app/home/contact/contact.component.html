@@ -1,4 +1,6 @@
 
+<div class="contact-background">
+<div class="contact-container">
 <div id="contact-header" > 
     <div class="contact-title">
         <h2>{{ 'contact.title' | translate }}</h2>
@@ -79,6 +81,16 @@
         <button class="message-btn" type="submit" [class.is-disabled]="form.invalid || form.pending">
         {{ 'contact.form.submit' | translate }}
         </button>
+
+    </form>
+
+    <a class="arrow-top" href="#top" [attr.aria-label]="'contact.backToTopAria' | translate">
+        <img src="./images/arrow-top.png" [attr.alt]="'contact.icons.topAlt' | translate">
+    </a>
+</div>
+</div>
+</div>
+<!-- feedback overlay  -->
         @if (showFeedback) {
         <div class="feedback-background" (click)="closeFeedback()">
         <div class="feedback-overlay" role="status" aria-live="polite" (click)="$event.stopPropagation()">
@@ -86,9 +98,3 @@
         </div>
         </div>
         }
-    </form>
-
-    <a class="arrow-top" href="#top" [attr.aria-label]="'contact.backToTopAria' | translate">
-        <img src="./images/arrow-top.png" [attr.alt]="'contact.icons.topAlt' | translate">
-    </a>
-</div>

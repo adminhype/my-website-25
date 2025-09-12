@@ -70,7 +70,7 @@ export class ContactComponent {
     console.log('Form data:', data);
     setTimeout(() => {
       this.closeFeedback();
-    }, 4000);
+    }, 4000000000000);
     this.form.reset({ name: '', email: '', message: '', consent: false }, { emitEvent: false });
     this.clearDraft();
     this.submitted = false;

@@ -1,14 +1,20 @@
-header {
+.header-wrapper {
   position: sticky;
   top: 0;
   z-index: 25;
+  background: #FFFCF3;
+  display: flex;
+  justify-content: center;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1920px;
   height: 96px;
   padding: 1rem 3rem 0 3rem;
-  background: #FFFCF3;
 
   .logo {
     display: flex;

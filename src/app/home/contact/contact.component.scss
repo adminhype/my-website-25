@@ -1,19 +1,31 @@
-#contact-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
-    min-height: 220px;
+.contact-background {
+    width: 100%;
     background: #000;
-    clip-path: polygon(-2% 0, 135% 62%, 100% 122%, 0 122%);
+    display: flex;
+    justify-content: center;
+    margin: -0.2rem 0;
+    clip-path: polygon(-2% 0, 185% 62%, 100% 122%, 0 122%);
 
     @media(max-width: 1024px) {
-        clip-path: polygon(-2% 0, 181% 86%, 100% 122%, 0 122%);
+        clip-path: polygon(-2% 0, 285% 86%, 100% 122%, 0 122%);
     }
 
     @media(max-width: 640px) {
-        clip-path: polygon(-2% 0, 400% 85%, 100% 122%, 0 122%);
+        clip-path: polygon(-2% 0, 485% 85%, 100% 122%, 0 122%);
         padding: 1rem 0;
     }
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1920px;
+}
+
+#contact-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 3rem;
+    min-height: 220px;
 
     .contact-title {
         display: flex;
@@ -26,7 +38,7 @@
             font-size: 4rem;
             color: #fff;
             transform: scaleX(1.5);
-            padding: 0 0 2rem 5rem;
+            padding: 0 0 1rem 5rem;
 
             &:hover {
                 color: #5988FF;
@@ -38,9 +50,10 @@
         }
 
         @media(max-width: 1024px) {
+
             h2 {
                 font-size: 2.5rem;
-                padding: 0 0 3rem 2rem;
+                padding: 0 0 0 3rem;
             }
         }
 
@@ -54,6 +67,7 @@
 
             h2 {
                 font-size: 2rem;
+                padding: 0 1rem 0 0;
             }
 
         }
@@ -65,10 +79,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     background: #000;
     gap: 1rem;
-    margin: -0.2rem 0;
 
     @media(max-width: 640px) {
         padding: 1rem;
@@ -190,7 +203,7 @@
         cursor: pointer;
         position: absolute;
         top: 30rem;
-        right: 3rem;
+        right: 2rem;
         left: 0;
         bottom: 200px;
 
@@ -221,6 +234,7 @@
     input,
     textarea {
         transition: border-color 0.2s ease;
+        font-size: 1rem;
 
         &:focus {
             border: solid 3px #fff;
@@ -283,11 +297,11 @@
     background: #5988FF;
     color: #fff;
     border: solid 3px #fff;
-    padding: 1.5rem 2rem;
     font-size: 1.2rem;
     text-align: center;
     animation: bounceIn 0.5s ease-out;
     gap: 1rem;
+    z-index: 29;
 
     @media(max-width: 768px) {
         padding: 1rem;
@@ -300,8 +314,8 @@
 }
 
 .feedback-image {
-    height: 320px;
-    width: 320px;
+    height: 420px;
+    width: 420px;
     object-fit: cover;
 
     @media(max-width: 1024px) {

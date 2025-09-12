@@ -1,10 +1,12 @@
-    footer {
+    .footer-wrapper {
+        width: 100%;
+        max-width: 1920px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         padding: 2rem 3rem;
-        background: #000;
+        ;
+
 
         @media(max-width: 768px) {
             padding: 3rem 1.5rem;
@@ -15,6 +17,16 @@
             gap: 1rem;
             padding: 3rem 1rem;
         }
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: #000;
+        gap: 2rem;
+
 
         .logo {
             display: flex;

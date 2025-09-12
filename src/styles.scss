@@ -24,6 +24,21 @@ section {
   }
 }
 
+.scroll-anchor {
+  top: -96px;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  @media (max-width: 768px) {
+    top: -80px;
+  }
+
+  @media (max-width: 640px) {
+    top: -64px;
+  }
+}
+
 @font-face {
   font-family: "syne";
   src: url("../public//fonts/syne-v23-latin/syne-v23-latin-regular.woff2") format("woff");

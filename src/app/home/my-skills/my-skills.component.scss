@@ -8,9 +8,6 @@
     margin: 2rem 3rem 0 3rem;
 
     .header-skills {
-        position: absolute;
-        top: -2rem;
-
         h2 {
             font-size: 4rem;
             padding: 0 0.5rem;
@@ -20,16 +17,17 @@
             &:hover {
                 color: #5988FF;
             }
-        }
 
-        @media(max-width: 1024px) {
-            h2 {
+            @media(max-width: 1024px) {
                 font-size: 2.5rem;
             }
-        }
 
-        @media(max-width: 640px) {
-            h2 {
+            @media(max-width: 640px) {
+                font-size: 2rem;
+                top: 0.75rem;
+            }
+
+            @media(max-width: 375px) {
                 font-size: 1.2rem;
                 top: 0.75rem;
             }

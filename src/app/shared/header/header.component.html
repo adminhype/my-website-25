@@ -35,15 +35,15 @@
         role="dialog"
         aria-modal="true">
         <div class="menu-items">
-          <a href="#arrow-right" (click)="closeMenu()">
+          <a [routerLink]="[]" fragment="skills" (click)="closeMenu()">
             {{ 'nav.skills' | translate }}
             <span class="line"></span>
           </a>
-          <a href="#hero-side-content" (click)="closeMenu()">
+          <a [routerLink]="[]" fragment="about" (click)="closeMenu()">
               {{ 'nav.about' | translate }}
             <span class="line"></span>
           </a>
-          <a href="#arrow-left" (click)="closeMenu()">
+          <a [routerLink]="[]" fragment="portfolio" (click)="closeMenu()">
             {{ 'nav.portfolio' | translate }}
             <span class="line"></span>
           </a>

@@ -1,0 +1,43 @@
+#arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 0;
+    margin: 0 3rem 4rem 3rem;
+
+    &:hover {
+        animation: arrowDownRight 1s ease-out;
+    }
+
+    @media(max-width: 640px) {
+        margin: 0 2rem 2rem 0;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+
+        @media(max-width: 640px) {
+            width: 150px;
+            height: 150px;
+
+        }
+    }
+}
+
+//arrow keyframes
+@keyframes arrowDownRight {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-40px, 40px);
+        opacity: 1;
+    }
+}

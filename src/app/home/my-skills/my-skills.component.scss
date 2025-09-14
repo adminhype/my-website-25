@@ -55,6 +55,7 @@
             img {
                 width: 60px;
                 height: 60px;
+                object-fit: contain;
 
                 &:hover {
                     animation: moveBackAndAround 0.5s ease-in-out;

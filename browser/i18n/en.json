@@ -1,0 +1,264 @@
+    {
+        "hero": {
+            "title": {
+                "top": "Fullstack",
+                "bottom": "Developer"
+            },
+            "name": "Adem Oencue",
+            "cta": "Send a message",
+            "emailAria": "E-mail to {name}",
+            "scroll": {
+                "line1": "Scroll",
+                "line2": "Down"
+            },
+            "arrowAlt": "Arrow down"
+        },
+        "nav": {
+            "about": "About me",
+            "skills": "My Skills",
+            "portfolio": "Portfolio"
+        },
+        "header": {
+            "homeAria": "Go home",
+            "logoAlt": "Logo",
+            "lang": {
+                "ariaLabel": "Language"
+            },
+            "burger": {
+                "open": "Open main menu",
+                "close": "Close main menu",
+                "openIconAlt": "Icon: open menu",
+                "closeIconAlt": "Icon: close menu"
+            },
+            "menu": {
+                "ariaLabel": "Main menu",
+                "aboutAria": "Go to About",
+                "skillsAria": "Go to Skills",
+                "portfolioAria": "Go to Portfolio"
+            },
+            "socials": {
+                "cta": "Get in touch!",
+                "emailLinkAria": "Open email to {{email}}",
+                "githubAlt": "GitHub",
+                "githubAria": "Go to GitHub",
+                "emailAlt": "Email",
+                "emailAria": "Compose email",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Go to LinkedIn"
+            }
+        },
+        "about": {
+            "title": "About me",
+            "p1": "Hello from Bremen. I'm on the path to full-stack development—turning a long-time hobby into a professional role. I value clear, practical solutions and steady progress.",
+            "meta": "Bremen / 28 / German / Kurdish heritage",
+            "p2": "Open to junior/entry-level opportunities. Keep learning fast, contributing, and growing with a team. If my profile fits your needs, let's Talk.",
+            "cta": "Contact",
+            "ctaAria": "Jump to contact section",
+            "imageAlt": "Portrait of {{name}}, smiling"
+        },
+        "skills": {
+            "title": "My skills",
+            "diagArrowLeftAlt": "Diagonal arrow left",
+            "diagArrowRightAlt": "Diagonal arrow right",
+            "items": {
+                "angular": {
+                    "label": "Angular"
+                },
+                "ts": {
+                    "label": "TypeScript"
+                },
+                "js": {
+                    "label": "JavaScript"
+                },
+                "html": {
+                    "label": "HTML"
+                },
+                "css": {
+                    "label": "CSS"
+                },
+                "git": {
+                    "label": "Git"
+                },
+                "firebase": {
+                    "label": "Firebase"
+                },
+                "scrum": {
+                    "label": "Scrum"
+                },
+                "rest": {
+                    "label": "REST API"
+                },
+                "material": {
+                    "label": "Material Design"
+                }
+            }
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "From idea to impact: projects from my journey as an aspiring full-stack developer. Click through for details — feedback welcome.",
+            "icons": {
+                "rotateAlt": "Rotating arrow"
+            },
+            "cta": {
+                "github": "View Code",
+                "live": "Live Demo",
+                "githubAria": "Open the source code of {{name}} on GitHub",
+                "liveAria": "Open the live demo of {{name}}"
+            },
+            "countAria": "Project {{index}} of {{total}}",
+            "items": {
+                "join": {
+                    "title": "Join",
+                    "stack": "Angular | TypeScript | HTML | CSS | Firebase",
+                    "desc": "Task manager inspired by the Kanban system …",
+                    "imageAlt": "Portfolio project: {{name}}"
+                },
+                "pollo": {
+                    "title": "El-Pollo Loco",
+                    "stack": "JavaScript | HTML | CSS",
+                    "desc": "2D jump & run game based on object-oriented programming.",
+                    "imageAlt": "Screenshot of the El-Pollo Loco jump & run game"
+                },
+                "pokedex": {
+                    "title": "Pokédex",
+                    "stack": "JavaScript | HTML | CSS | API",
+                    "desc": "Pokédex with data from an external API, including detailed view.",
+                    "imageAlt": "Screenshot of the Pokédex project"
+                }
+            }
+        },
+        "contact": {
+            "title": "What's up?",
+            "lead": "Tell me about your role or project. I'll reply promptly.",
+            "sublead": "Let's connect and create something amazing together!",
+            "backToTopAria": "Back to top",
+            "icons": {
+                "diagLeftAlt": "Diagonal arrow left",
+                "topAlt": "Arrow up"
+            },
+            "form": {
+                "name": {
+                    "placeholder": "Your Name",
+                    "aria": "Your Name"
+                },
+                "email": {
+                    "placeholder": "Your Email",
+                    "aria": "Your Email"
+                },
+                "message": {
+                    "placeholder": "Your Message",
+                    "aria": "Your Message"
+                },
+                "consent": {
+                    "prefix": "I've read the",
+                    "link": "privacy policy",
+                    "suffix": "and agree to the processing of my data as outlined."
+                },
+                "submit": "Send Message",
+                "success": "Thank you! I'll reply soon.",
+                "error": "Oops, something went wrong."
+            },
+            "errors": {
+                "name": {
+                    "required": "Name is required.",
+                    "minlength": "Minimum {{min}} characters."
+                },
+                "email": {
+                    "required": "Email is required.",
+                    "format": "Please enter a valid email."
+                },
+                "message": {
+                    "required": "Message is required.",
+                    "minlength": "Minimum {{min}} characters."
+                },
+                "consent": {
+                    "required": "Please confirm privacy policy."
+                }
+            }
+        },
+        "footer": {
+            "homeAria": "Go home",
+            "logoAlt": "Logo",
+            "copy": "{{name}} {{year}}",
+            "legalNotice": "Legal notice",
+            "legalNoticeAria": "Go to legal notice",
+            "socials": {
+                "githubAlt": "GitHub",
+                "githubAria": "Go to GitHub",
+                "emailAlt": "Email",
+                "emailAria": "Compose email",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Go to LinkedIn"
+            }
+        },
+        "legal": {
+            "backAria": "Go back home",
+            "backAlt": "Back arrow",
+            "title": "Legal Notice",
+            "subtitle": "Imprint / Site Notice",
+            "intro": {
+                "purpose": "This website is a private, non-commercial online portfolio created solely for application purposes.",
+                "responsible": "Responsible according to § 55 (2) RStV:",
+                "emailLabel": "Email:"
+            },
+            "contactEmail": "dev@ademoencue.de",
+            "disclaimer": {
+                "title": "Disclaimer",
+                "text": "The content of this website has been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content. As the operator of this site, I am responsible for my own content in accordance with general laws, but I am not obliged to monitor third-party information provided or stored here or to investigate circumstances that indicate illegal activity."
+            },
+            "links": {
+                "title": "Liability for Links",
+                "text": "This site contains links to external websites. I have no influence on the content of those websites and therefore cannot assume any liability for them. The respective provider or operator of the linked pages is always responsible for their content."
+            },
+            "copyright": {
+                "title": "Copyright",
+                "text": "The content and works created by me on this website are subject to German copyright law. Duplication, editing, distribution, or any use outside the limits of copyright law requires my written consent."
+            }
+        },
+        "privacy": {
+            "backAria": "Go back home",
+            "backAlt": "Back arrow",
+            "title": "Privacy Policy",
+            "general": {
+                "title": "General Information",
+                "text": "Protecting your personal data is important to me. This website is a private, non-commercial portfolio and complies with applicable data protection regulations (GDPR)."
+            },
+            "responsible": {
+                "title": "Controller",
+                "text": "The controller responsible for data processing on this website is:",
+                "emailLabel": "Email:"
+            },
+            "contactEmail": "dev@ademoencue.de",
+            "hosting": {
+                "title": "Hosting via GitHub Pages",
+                "text": "This website is hosted on GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). When accessing the site, GitHub automatically collects technical information (e.g., IP address, browser type, operating system, access time). This data is processed to ensure security and stability and is automatically deleted after a short period. Data may be transferred to the USA. GitHub has committed to EU data protection standards (including the EU US Data Privacy Framework)."
+            },
+            "firebase": {
+                "title": "Contact Form via Firebase",
+                "text": "For my contact form, I use Google Firebase (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). When you submit the form, the data you enter (such as name, email address, message) is processed and transmitted securely via Firebase. Firebase may also log technical data (e.g., IP address, device information, timestamp) to ensure reliable operation and prevent misuse. Data may be transferred to servers in the USA. Google participates in the EU US Data Privacy Framework and applies Standard Contractual Clauses."
+            },
+            "purpose": {
+                "title": "Purpose of Processing",
+                "text": "The sole purpose of processing your personal data is to respond to your inquiries and enable communication with you. Your data will not be used for marketing purposes."
+            },
+            "retention": {
+                "title": "Data Retention",
+                "text": "I store your data only as long as necessary to respond to your inquiry or as required by law. Afterwards, the data will be deleted."
+            },
+            "rights": {
+                "title": "Your Rights",
+                "listAria": "List of data protection rights",
+                "items": {
+                    "access": "Request access to your stored data",
+                    "correctionDeletion": "Request correction or erasure",
+                    "restrictObject": "Restrict or object to processing",
+                    "portability": "Request data portability"
+                },
+                "contact": "To exercise these rights, please contact me by email."
+            },
+            "security": {
+                "title": "Data Security",
+                "text": "Please note that data transmission over the internet (e.g., email or form submission) may have security gaps. Complete protection against access by third parties is not possible. However, I take appropriate technical and organizational measures to protect your data."
+            }
+        }
+    }

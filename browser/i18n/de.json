@@ -1,0 +1,264 @@
+    {
+        "hero": {
+            "title": {
+                "top": "Software",
+                "bottom": "Entwickler"
+            },
+            "name": "Adem Öncü",
+            "cta": "Nachricht senden",
+            "emailAria": "E-Mail an {{name}}",
+            "scroll": {
+                "line1": "Scroll",
+                "line2": "unten"
+            },
+            "arrowAlt": "Pfeil nach unten"
+        },
+        "nav": {
+            "about": "Über mich",
+            "skills": "Fähigkeiten",
+            "portfolio": "Portfolio"
+        },
+        "header": {
+            "homeAria": "Zur Startseite",
+            "logoAlt": "Logo",
+            "lang": {
+                "ariaLabel": "Sprache"
+            },
+            "burger": {
+                "open": "Hauptmenü öffnen",
+                "close": "Hauptmenü schließen",
+                "openIconAlt": "Symbol: Menü öffnen",
+                "closeIconAlt": "Symbol: Menü schließen"
+            },
+            "menu": {
+                "ariaLabel": "Hauptmenü",
+                "aboutAria": "Zu Über mich",
+                "skillsAria": "Zu Fähigkeiten",
+                "portfolioAria": "Zu Portfolio"
+            },
+            "socials": {
+                "cta": "Schreib mir!",
+                "emailLinkAria": "E-Mail an {{email}} öffnen",
+                "githubAlt": "GitHub",
+                "githubAria": "Zu GitHub",
+                "emailAlt": "E-Mail",
+                "emailAria": "E-Mail schreiben",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Zu LinkedIn"
+            }
+        },
+        "about": {
+            "title": "Über mich",
+            "p1": "Hallo aus Bremen. Ich bin auf dem Weg zum Full-Stack-Entwickler – aus einem langjährigen Hobby wird ein Beruf. Mir sind klare, pragmatische Lösungen und stetiger Fortschritt wichtig.",
+            "meta": "Bremen / 28 / Deutsch / Kurdische Wurzeln",
+            "p2": "Offen für Junior-/Entry-Level-Möglichkeiten. Ich lerne schnell, bringe mich ein und wachse gern im Team. Wenn mein Profil passt, lass uns sprechen.",
+            "cta": "Kontakt",
+            "ctaAria": "Zum Kontaktbereich springen",
+            "imageAlt": "Porträt von {{name}}, lächelnd"
+        },
+        "skills": {
+            "title": "Fähigkeiten",
+            "diagArrowLeftAlt": "Diagonalpfeil nach links",
+            "diagArrowRightAlt": "Diagonalpfeil nach rechts",
+            "items": {
+                "angular": {
+                    "label": "Angular"
+                },
+                "ts": {
+                    "label": "TypeScript"
+                },
+                "js": {
+                    "label": "JavaScript"
+                },
+                "html": {
+                    "label": "HTML"
+                },
+                "css": {
+                    "label": "CSS"
+                },
+                "git": {
+                    "label": "Git"
+                },
+                "firebase": {
+                    "label": "Firebase"
+                },
+                "scrum": {
+                    "label": "Scrum"
+                },
+                "rest": {
+                    "label": "REST-API"
+                },
+                "material": {
+                    "label": "Material Design"
+                }
+            }
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "Von der Idee zur Wirkung: Projekte aus meinem Weg als angehender Full-Stack-Entwickler. Klicke für Details – Feedback willkommen.",
+            "icons": {
+                "rotateAlt": "Rotierender Pfeil"
+            },
+            "cta": {
+                "github": "Github",
+                "live": "Demo Ansehen",
+                "githubAria": "Öffne den Quellcode von {{name}} auf GitHub",
+                "liveAria": "Öffne die Live-Demo von {{name}}"
+            },
+            "countAria": "Projekt {{index}} von {{total}}",
+            "items": {
+                "join": {
+                    "title": "Join",
+                    "stack": "Angular | TypeScript | HTML | CSS | Firebase",
+                    "desc": "Task-Manager, inspiriert vom Kanban-System …",
+                    "imageAlt": "Portfolio-Projekt: {{name}}"
+                },
+                "pollo": {
+                    "title": "El-Pollo Loco",
+                    "stack": "JavaScript | HTML | CSS",
+                    "desc": "2D Jump & Run Spiel basierend auf objektorientierter Programmierung.",
+                    "imageAlt": "Screenshot vom Jump & Run Spiel El-Pollo Loco"
+                },
+                "pokedex": {
+                    "title": "Pokédex",
+                    "stack": "JavaScript | HTML | CSS | API",
+                    "desc": "Pokédex mit Daten aus einer externen API, inkl. Detailansicht.",
+                    "imageAlt": "Screenshot vom Pokédex Projekt"
+                }
+            }
+        },
+        "contact": {
+            "title": "Was geht?",
+            "lead": "Erzähl mir kurz von deiner Rolle oder deinem Projekt. Ich antworte zeitnah.",
+            "sublead": "Lass uns connecten und gemeinsam etwas Großartiges bauen!",
+            "backToTopAria": "Zurück nach oben",
+            "icons": {
+                "diagLeftAlt": "Diagonalpfeil nach links",
+                "topAlt": "Pfeil nach oben"
+            },
+            "form": {
+                "name": {
+                    "placeholder": "Dein Name",
+                    "aria": "Dein Name"
+                },
+                "email": {
+                    "placeholder": "Deine E-Mail",
+                    "aria": "Deine E-Mail"
+                },
+                "message": {
+                    "placeholder": "Deine Nachricht",
+                    "aria": "Deine Nachricht"
+                },
+                "consent": {
+                    "prefix": "Ich habe die",
+                    "link": "Datenschutzerklärung",
+                    "suffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+                },
+                "submit": "Nachricht senden",
+                "success": "Danke! Ich melde mich bald zurück.",
+                "error": "Uups, etwas ist schiefgelaufen."
+            },
+            "errors": {
+                "name": {
+                    "required": "Name ist erforderlich.",
+                    "minlength": "Mindestens {{min}} Zeichen."
+                },
+                "email": {
+                    "required": "E-Mail ist erforderlich.",
+                    "format": "Bitte eine gültige E-Mail eingeben."
+                },
+                "message": {
+                    "required": "Nachricht ist erforderlich.",
+                    "minlength": "Mindestens {{min}} Zeichen."
+                },
+                "consent": {
+                    "required": "Bitte bestätige die Datenschutzerklärung."
+                }
+            }
+        },
+        "footer": {
+            "homeAria": "Zur Startseite",
+            "logoAlt": "Logo",
+            "copy": "{{name}} {{year}}",
+            "legalNotice": "Impressum",
+            "legalNoticeAria": "Zum Impressum",
+            "socials": {
+                "githubAlt": "GitHub",
+                "githubAria": "Zu GitHub",
+                "emailAlt": "E-Mail",
+                "emailAria": "E-Mail schreiben",
+                "linkedinAlt": "LinkedIn",
+                "linkedinAria": "Zu LinkedIn"
+            }
+        },
+        "legal": {
+            "backAria": "Zur Startseite zurück",
+            "backAlt": "Zurück-Pfeil",
+            "title": "Impressum",
+            "subtitle": "Impressum / Site Notice",
+            "intro": {
+                "purpose": "Diese Website ist ein privates, nicht-kommerzielles Online-Portfolio, erstellt ausschließlich zu Bewerbungszwecken.",
+                "responsible": "Verantwortlich gemäß § 55 Abs. 2 RStV:",
+                "emailLabel": "E-Mail:"
+            },
+            "contactEmail": "dev@ademoencue.de",
+            "disclaimer": {
+                "title": "Haftungsausschluss",
+                "text": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Betreiber dieser Seite bin ich gemäß den allgemeinen Gesetzen für eigene Inhalte verantwortlich, nicht jedoch verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+            },
+            "links": {
+                "title": "Haftung für Links",
+                "text": "Diese Seite enthält Links zu externen Websites. Auf deren Inhalte habe ich keinen Einfluss; daher kann ich hierfür keine Haftung übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich."
+            },
+            "copyright": {
+                "title": "Urheberrecht",
+                "text": "Die von mir erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen meiner schriftlichen Zustimmung."
+            }
+        },
+        "privacy": {
+            "backAria": "Zur Startseite zurück",
+            "backAlt": "Zurück-Pfeil",
+            "title": "Datenschutz",
+            "general": {
+                "title": "Allgemeine Informationen",
+                "text": "Der Schutz deiner personenbezogenen Daten ist mir wichtig. Diese Website ist ein privates, nicht-kommerzielles Portfolio und richtet sich nach den geltenden Datenschutzbestimmungen (DSGVO)."
+            },
+            "responsible": {
+                "title": "Verantwortliche Stelle",
+                "text": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+                "emailLabel": "E-Mail:"
+            },
+            "contactEmail": "dev@ademoencue.de",
+            "hosting": {
+                "title": "Hosting über GitHub Pages",
+                "text": "Diese Website wird über GitHub Pages gehostet (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf der Seite erhebt GitHub automatisch technische Informationen (z. B. IP-Adresse, Browsertyp, Betriebssystem, Zeitpunkt des Zugriffs). Diese Daten werden zur Sicherstellung von Sicherheit und Stabilität verarbeitet und nach kurzer Zeit automatisch gelöscht. Eine Übermittlung in die USA kann erfolgen. GitHub verpflichtet sich zur Einhaltung europäischer Datenschutzstandards (u. a. EU-US Data Privacy Framework)."
+            },
+            "firebase": {
+                "title": "Kontaktformular über Firebase",
+                "text": "Für das Kontaktformular nutze ich Google Firebase (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Bei Absenden des Formulars werden die eingegebenen Daten (z. B. Name, E-Mail, Nachricht) verarbeitet und sicher über Firebase übermittelt. Firebase kann zudem technische Daten (z. B. IP-Adresse, Geräteinformationen, Zeitstempel) protokollieren, um den Betrieb sicherzustellen und Missbrauch zu verhindern. Eine Übermittlung in die USA kann stattfinden. Google nimmt am EU-US Data Privacy Framework teil und verwendet Standardvertragsklauseln."
+            },
+            "purpose": {
+                "title": "Zweck der Verarbeitung",
+                "text": "Die Verarbeitung deiner personenbezogenen Daten dient ausschließlich der Beantwortung deiner Anfragen und der Kommunikation mit dir. Eine Nutzung zu Marketingzwecken findet nicht statt."
+            },
+            "retention": {
+                "title": "Speicherdauer",
+                "text": "Ich speichere deine Daten nur so lange, wie es zur Beantwortung deiner Anfrage erforderlich ist oder gesetzliche Vorgaben es verlangen. Anschließend werden die Daten gelöscht."
+            },
+            "rights": {
+                "title": "Deine Rechte",
+                "listAria": "Liste der Datenschutzrechte",
+                "items": {
+                    "access": "Auskunft über die gespeicherten Daten verlangen",
+                    "correctionDeletion": "Berichtigung oder Löschung verlangen",
+                    "restrictObject": "Einschränkung der Verarbeitung oder Widerspruch einlegen",
+                    "portability": "Datenübertragbarkeit verlangen"
+                },
+                "contact": "Zur Ausübung deiner Rechte kontaktiere mich bitte per E-Mail."
+            },
+            "security": {
+                "title": "Datensicherheit",
+                "text": "Bitte beachte, dass die Datenübertragung im Internet (z. B. E-Mail oder Formular) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz vor dem Zugriff durch Dritte ist nicht möglich. Ich treffe jedoch angemessene technische und organisatorische Maßnahmen zum Schutz deiner Daten."
+            }
+        }
+    }

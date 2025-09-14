@@ -3,7 +3,10 @@ name: Build and Deploy Angular
 on:
   push:
     branches:
-      - main   # bei jedem Push auf main wird deployed
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   build:

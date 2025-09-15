@@ -66,16 +66,42 @@ export class ContactComponent {
       return;
     }
     const data: ContactLoad = this.form.getRawValue();
-    this.showFeedback = true;
-    console.log('Form data:', data);
-    setTimeout(() => {
-      this.closeFeedback();
-    }, 4000000000000);
-    this.form.reset({ name: '', email: '', message: '', consent: false }, { emitEvent: false });
-    this.clearDraft();
-    this.submitted = false;
+    this.sendToformspree(data);
+
   }
   closeFeedback() {
   this.showFeedback = false;
+}
+  private sendToformspree(data: ContactLoad) {
+  const formspree = "https://formspree.io/f/xrbaveqe";
+
+  fetch(formspree, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      name: data.name,
+      email: data.email,
+      message: data.message,
+      consent: data.consent ? "on" : ""
+    }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+      this.showFeedback = true;
+      this.clearDraft();
+      this.form.reset({ name: "", email: "", message: "", consent: false });
+      this.submitted = false;
+      setTimeout(() => {
+      this.closeFeedback();
+    }, 4000);
+    })
+    .catch((err) => {
+      console.error("Error sending form:", err);
+    });
 }
 }

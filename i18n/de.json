@@ -233,9 +233,9 @@
                 "title": "Hosting über GitHub Pages",
                 "text": "Diese Website wird über GitHub Pages gehostet (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf der Seite erhebt GitHub automatisch technische Informationen (z. B. IP-Adresse, Browsertyp, Betriebssystem, Zeitpunkt des Zugriffs). Diese Daten werden zur Sicherstellung von Sicherheit und Stabilität verarbeitet und nach kurzer Zeit automatisch gelöscht. Eine Übermittlung in die USA kann erfolgen. GitHub verpflichtet sich zur Einhaltung europäischer Datenschutzstandards (u. a. EU-US Data Privacy Framework)."
             },
-            "firebase": {
-                "title": "Kontaktformular über Firebase",
-                "text": "Für das Kontaktformular nutze ich Google Firebase (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Bei Absenden des Formulars werden die eingegebenen Daten (z. B. Name, E-Mail, Nachricht) verarbeitet und sicher über Firebase übermittelt. Firebase kann zudem technische Daten (z. B. IP-Adresse, Geräteinformationen, Zeitstempel) protokollieren, um den Betrieb sicherzustellen und Missbrauch zu verhindern. Eine Übermittlung in die USA kann stattfinden. Google nimmt am EU-US Data Privacy Framework teil und verwendet Standardvertragsklauseln."
+            "formspree": {
+                "title": "Kontaktformular über Formspree",
+                "text": "Für das Kontaktformular nutze ich den Dienst Formspree (Formspree, Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). Beim Absenden des Formulars werden die eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) verarbeitet und sicher an meine IONOS-E-Mail-Adresse übermittelt. Formspree kann vorübergehend technische Daten (z. B. IP-Adresse, Browsertyp, Zeitstempel) protokollieren, um den Betrieb sicherzustellen und Missbrauch zu verhindern. Eine Übermittlung in die USA kann stattfinden. Formspree erklärt, die geltenden Datenschutzstandards einzuhalten, einschließlich des EU-US Data Privacy Framework."
             },
             "purpose": {
                 "title": "Zweck der Verarbeitung",

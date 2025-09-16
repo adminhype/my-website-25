@@ -233,9 +233,9 @@
                 "title": "Hosting via GitHub Pages",
                 "text": "This website is hosted on GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). When accessing the site, GitHub automatically collects technical information (e.g., IP address, browser type, operating system, access time). This data is processed to ensure security and stability and is automatically deleted after a short period. Data may be transferred to the USA. GitHub has committed to EU data protection standards (including the EU US Data Privacy Framework)."
             },
-            "firebase": {
-                "title": "Contact Form via Firebase",
-                "text": "For my contact form, I use Google Firebase (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). When you submit the form, the data you enter (such as name, email address, message) is processed and transmitted securely via Firebase. Firebase may also log technical data (e.g., IP address, device information, timestamp) to ensure reliable operation and prevent misuse. Data may be transferred to servers in the USA. Google participates in the EU US Data Privacy Framework and applies Standard Contractual Clauses."
+            "formspree": {
+                "title": "Contact Form via Formspree",
+                "text": "For my contact form, I use the service Formspree (Formspree, Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). When you submit the form, the data you enter (such as name, email address, and message) will be processed and securely transmitted to my IONOS email address. Formspree may temporarily log technical data (e.g., IP address, browser type, timestamp) to ensure reliable operation and prevent misuse. Data may be transferred to servers in the USA. Formspree states that it complies with applicable data protection standards, including the EU-US Data Privacy Framework."
             },
             "purpose": {
                 "title": "Purpose of Processing",

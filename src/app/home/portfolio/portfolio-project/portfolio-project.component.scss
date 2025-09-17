@@ -94,6 +94,7 @@
                 img {
                     height: 24px;
                     width: 24px;
+                    object-fit: contain;
                 }
             }
         }
@@ -135,10 +136,11 @@
                 white-space: nowrap;
                 color: #000;
 
-
-                &:hover {
-                    animation: spread 0.5s ease-out forwards;
-                    font-weight: bold;
+                @media(min-width: 1025px) {
+                    &:hover {
+                        animation: spread 0.5s ease-out forwards;
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -168,22 +170,22 @@
         }
     }
 
-    &:hover:not(.reverse) .portfolio-overlay {
-        animation: slideInLeft 1.2s ease forwards;
-    }
+    @media (min-width: 1025px) {
+        &:hover:not(.reverse) .portfolio-overlay {
+            animation: slideInLeft 1.2s ease forwards;
+        }
 
-    &.reverse:hover .portfolio-overlay {
-        animation: slideInRight 1.2s ease forwards;
+        &.reverse:hover .portfolio-overlay {
+            animation: slideInRight 1.2s ease forwards;
+        }
     }
 
     &:hover .portfolio-overlay {
-        opacity: 0;
+        opacity: 1;
         pointer-events: auto;
     }
 
     @media(max-width: 1024px) {
-        opacity: 1;
-
         .portfolio-overlay {
             pointer-events: auto;
             opacity: 1;

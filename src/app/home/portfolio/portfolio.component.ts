@@ -14,23 +14,37 @@ export class PortfolioComponent {
     {
       id: 1,
       image: './images/join.png',
-      github: 'https://github.com/adminhype/my-website-25',
-      live: 'https://ik-0225-join-002.developerakademie.net/angular-projects/join/login',
+      github: 'https://github.com/adminhype/joinKanban',
+      live: 'https://adminhype.github.io/joinKanban/#/login/',
       i18nKey: 'portfolio.items.join'
     },
     {
       id: 2,
       image: './images/pollo-placeholder.png',
-      github: 'https://github.com/dein-repo/other',
-      live: 'https://dein-live-link.com',
+      github: 'https://github.com/adminhype/polloLoco',
+      live: 'https://adminhype.github.io/polloLoco/',
       i18nKey: 'portfolio.items.pollo'
     },
-        {
+    {
       id: 3,
       image: './images/pokedex-placeholder.png',
-      github: 'https://github.com/dein-repo/other',
-      live: 'https://dein-live-link.com',
+      github: 'https://github.com/adminhype/pokedex',
+      live: 'https://github.com/adminhype/pokedex',
       i18nKey: 'portfolio.items.pokedex'
+    },
+    {
+      id: 4,
+      image: './images/kanmind.png',
+      github: 'https://github.com/adminhype/KanMind',
+      live: 'https://github.com/adminhype/KanMind',
+      i18nKey: 'portfolio.items.kanmind'
+    },
+    {
+      id: 5,
+      image: './images/coderr_banner.png',
+      github: 'https://github.com/adminhype/Coderr',
+      live: 'https://github.com/adminhype/Coderr',
+      i18nKey: 'portfolio.items.coderr'
     },
   ];
 }

@@ -61,11 +61,23 @@
             "diagArrowLeftAlt": "Diagonalpfeil nach links",
             "diagArrowRightAlt": "Diagonalpfeil nach rechts",
             "items": {
+                "python": {
+                    "label": "Python"
+                },
+                "django": {
+                    "label": "Django"
+                },
+                "drf": {
+                    "label": "Django REST Framework"
+                },
+                "sql": {
+                    "label": "SQLite"
+                },
+                "linux": {
+                    "label": "Linux"
+                },
                 "angular": {
                     "label": "Angular"
-                },
-                "ts": {
-                    "label": "TypeScript"
                 },
                 "js": {
                     "label": "JavaScript"
@@ -73,23 +85,11 @@
                 "html": {
                     "label": "HTML"
                 },
-                "css": {
-                    "label": "CSS"
-                },
                 "git": {
                     "label": "Git"
                 },
-                "firebase": {
-                    "label": "Firebase"
-                },
-                "scrum": {
-                    "label": "Scrum"
-                },
-                "rest": {
-                    "label": "REST-API"
-                },
-                "material": {
-                    "label": "Material Design"
+                "postman": {
+                    "label": "Postman"
                 }
             }
         },

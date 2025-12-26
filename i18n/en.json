@@ -49,12 +49,12 @@
         },
         "about": {
             "title": "About me",
-            "p1": "Hello from Bremen. I'm on the path to full-stack development—turning a long-time hobby into a professional role. I value clear, practical solutions and steady progress.",
+            "p1": "Moin from Bremen. I have explored programming on and off, but now I have dedicated 100% of my focus to it. As an aspiring fullstack developer, I value clear structures.",
             "meta": "Bremen / 28 / German / Kurdish heritage",
-            "p2": "Open to junior/entry-level opportunities. Keep learning fast, contributing, and growing with a team. If my profile fits your needs, let's Talk.",
-            "cta": "Contact",
+            "p2": "I am looking for a team where I can contribute and grow. Whether as a Junior or in another entry level role, my goal is to actively support and offer real value.",
+            "cta": "Get in touch",
             "ctaAria": "Jump to contact section",
-            "imageAlt": "Portrait of {{name}}, smiling"
+            "imageAlt": "Portrait of {{name}}"
         },
         "skills": {
             "title": "My skills",
@@ -95,7 +95,7 @@
         },
         "portfolio": {
             "title": "Portfolio",
-            "subtitle": "From idea to impact: projects from my journey as an aspiring full-stack developer. Click through for details — feedback welcome.",
+            "subtitle": "Putting knowledge into practice: Selected projects on my path to becoming a fullstack developer. Click for details, feedback is welcome.",
             "icons": {
                 "rotateAlt": "Rotating arrow"
             },
@@ -140,9 +140,9 @@
             }
         },
         "contact": {
-            "title": "What's up?",
-            "lead": "Tell me about your role or project. I'll reply promptly.",
-            "sublead": "Let's connect and create something amazing together!",
+            "title": "Let's talk",
+            "lead": "Whether it's a job opening or feedback tell me shortly what's on your mind.",
+            "sublead": "I'll reply promptly and look forward to connecting.",
             "backToTopAria": "Back to top",
             "icons": {
                 "diagLeftAlt": "Diagonal arrow left",

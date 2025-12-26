@@ -1,7 +1,7 @@
     {
         "hero": {
             "title": {
-                "top": "Software",
+                "top": "Fullstack",
                 "bottom": "Entwickler"
             },
             "name": "Adem Öncü",
@@ -49,12 +49,12 @@
         },
         "about": {
             "title": "Über mich",
-            "p1": "Hallo aus Bremen. Ich bin auf dem Weg zum Full-Stack-Entwickler – aus einem langjährigen Hobby wird ein Beruf. Mir sind klare, pragmatische Lösungen und stetiger Fortschritt wichtig.",
+            "p1": "Moin aus Bremen. Ich habe mich immer wieder mit dem Programmieren beschäftigt, jetzt habe ich meinen Fokus 100% darauf gelegt. Als Angehender FullStack Entwickler schätze ich klare Strukturen.",
             "meta": "Bremen / 28 / Deutsch / Kurdische Wurzeln",
-            "p2": "Offen für Junior-/Entry-Level-Möglichkeiten. Ich lerne schnell, bringe mich ein und wachse gern im Team. Wenn mein Profil passt, lass uns sprechen.",
-            "cta": "Kontakt",
+            "p2": "Ich suche ein Team, in dem ich mich einbringen und weiterentwickeln kann. Ob als Junior oder über einen anderen Einstieg, Mein Ziel ist es, tatkräftig zu unterstüzen und einen echten Mehrwert zu bieten",
+            "cta": "Kontakt aufnehmen",
             "ctaAria": "Zum Kontaktbereich springen",
-            "imageAlt": "Porträt von {{name}}, lächelnd"
+            "imageAlt": "Porträt von {{name}}"
         },
         "skills": {
             "title": "Fähigkeiten",
@@ -95,7 +95,7 @@
         },
         "portfolio": {
             "title": "Portfolio",
-            "subtitle": "Von der Idee zur Wirkung: Projekte aus meinem Weg als angehender Full-Stack-Entwickler. Klicke für Details – Feedback willkommen.",
+            "subtitle": "Hier wende ich mein Wissen praktisch an: Ausgewählte Projekte auf meinem Weg zum Fullstack Entwickler. Klicke für Details, Feedback ist willkommen.",
             "icons": {
                 "rotateAlt": "Rotierender Pfeil"
             },
@@ -140,9 +140,9 @@
             }
         },
         "contact": {
-            "title": "Was geht?",
-            "lead": "Erzähl mir kurz von deiner Rolle oder deinem Projekt. Ich antworte zeitnah.",
-            "sublead": "Lass uns connecten und gemeinsam etwas Großartiges bauen!",
+            "title": "Moin",
+            "lead": "Ob offene Stelle oder Feedback erzähl mir kurz von deinem Anliegen.",
+            "sublead": "Ich antworte zeitnah und freue mich auf den Austausch",
             "backToTopAria": "Zurück nach oben",
             "icons": {
                 "diagLeftAlt": "Diagonalpfeil nach links",

@@ -124,6 +124,18 @@
                     "stack": "JavaScript | HTML | CSS | API",
                     "desc": "Pokédex mit Daten aus einer externen API, inkl. Detailansicht.",
                     "imageAlt": "Screenshot vom Pokédex Projekt"
+                },
+                "kanmind": {
+                    "title": "KanMind",
+                    "stack": " Python| Django | DRF | SQLite",
+                    "desc": "Backend für ein Kanban Board. Token-basierte Authentifizierung und eine REST-API.",
+                    "imageAlt": "Screenshot vom KanMind Projekt"
+                },
+                "coderr": {
+                    "title": "Coderr",
+                    "stack": "Python | Django | DRF | Pytest",
+                    "desc": "API für eine Freelander Plattform. Fokus auf Qualität durch Testing.",
+                    "imageAlt": "Screenshot vom Coderr Projekt"
                 }
             }
         },
